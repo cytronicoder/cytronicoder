@@ -1,11 +1,10 @@
 ## 👋 Hi there! I'm Peter.
 
-I'm a web developer currently living in Singapore and am currently studying at Stamford American International School. I mainly dabble in web development, but I am also learning competitive programming and graphics design.
+I'm a web developer currently studying at Stamford American International School in Singapore. I mainly dabble in web development, but I am also learning competitive programming and graphics design.
 
 ### 🏆 Achievements
-- Top 1% in the American Mathematics Competition 8
-- Ranked 1st globally in the BEBRAS International Challenge on Informatics and Computational Thinking
-- Ranked 3rd globally in the Singapore Math Global Assessments Final
+- Top 1% in the American Mathematics Competition 8 (AMC 8)
+- Ranked 1st globally in the BEBRAS International Challenge on Informatics and Computational Thinking and ranked 3rd globally in the Singapore Math Global Assessments Final
 - Scored **A** on [AP Computer Science A](https://cty.jhu.edu/programs/online/courses/ap-computer-science-a-acs) and **A+** on [Honors Precalculus](https://cty.jhu.edu/programs/online/courses/honors-precalculus-pre) 
   - Offered by the [Johns Hopkins Center for Talented Youth](https://cty.jhu.edu)
 
