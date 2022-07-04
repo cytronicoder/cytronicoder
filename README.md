@@ -1,12 +1,22 @@
 ## 👋 Hi there! I'm Peter.
 
-I'm a web developer currently studying at Stamford American International School in Singapore. I mainly dabble in web development, but I am also learning competitive programming and graphics design.
+I'm a web developer currently studying at Stamford American International School in Singapore. I mainly dabble in web development, but I am also learning competitive programming and graphics design in my free time. In my free time, I like to travel around Singapore, play video games, and read.
 
 ### 🏆 Achievements
-- Top 1% in the American Mathematics Competition 8 (AMC 8)
-- Ranked 1st globally in the BEBRAS International Challenge on Informatics and Computational Thinking and ranked 3rd globally in the Singapore Math Global Assessments Final
-- Scored **A** on [AP Computer Science A](https://cty.jhu.edu/programs/online/courses/ap-computer-science-a-acs) and **A+** on [Honors Precalculus](https://cty.jhu.edu/programs/online/courses/honors-precalculus-pre) 
-  - Offered by the [Johns Hopkins Center for Talented Youth](https://cty.jhu.edu)
+- Received Honor Roll of Distinction (top 1%) for the American Mathematics Competition 8 and the Certificate of Achievement for AMC10
+- First place in Singapore for 
+  - BEBRAS International Challenge on Informatics and Computational Thinking (BEBRAS)
+  - Design Thinking with Robotics and Computational Thinking International Competition Finals (DrCT)
+  - Singapore Math Global Assessments Final (SINGA)
+
+### 📚 Experience
+- Founder of Cogniforge, a free platform that focuses on personalized learning with mentor-guided projects and encourages an interconnected community through co-work sessions and peer-to-peer collaboration
+- Current head of the Development and Implementation team at the [International Junior Honour Society Student Leadership Council](https://ijhscommunity.org/)
+  - Former head of the web development team at the SLC
+
+### 🚢 Projects I've worked on
+- Contributed to [buildspace faq](https://github.com/buildspace/buildspace-faq), a web app for helping users to find answers to frequently asked questions about buildspace projects
+- Created a web app for helping users to [visualize Singapore taxi locations](https://singapore-taxified.cytronicoder.repl.co) using real-time taxi availability data from data.gov.sg
 
 <hr />
 
@@ -36,7 +46,7 @@ I'm a web developer currently studying at Stamford American International School
 <hr />
 
 ### 🤝 Collaboration
-I believe that collaborating on projects is a great way to learn from each other and build up experience; feel free to hit me up on Discord (cytronicoder#4975) if you want to work on a project together.
+I believe that collaborating on projects is a great way to learn from each other and build up experience; feel free to hit me up on Discord (cytronicoder#4975) or email me at [novodoodle@gmail.com](mailto:novodoodle@gmail.com) if you want to work on a project together.
 
 ### 📢 Socials
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/cytronicoder)
