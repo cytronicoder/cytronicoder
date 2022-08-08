@@ -17,6 +17,7 @@ I'm a web developer currently studying at Stamford American International School
 ### 🚢 Projects I've worked on
 - Contributed to [buildspace faq](https://github.com/buildspace/buildspace-faq), a web app for helping users to find answers to frequently asked questions about buildspace projects
 - Created a web app for helping users to [visualize Singapore taxi locations](https://singapore-taxified.cytronicoder.repl.co) using real-time taxi availability data from data.gov.sg
+- Built a Connect 4 solver during [Fundamentals of Computer Science](https://cty.jhu.edu/programs/summer/courses/fundamentals-of-computer-science-fcps); ~it got beaten by another algorithm so~ then I made [a better one](https://github.com/cytronicoder/connect-four)
 
 <hr />
 
