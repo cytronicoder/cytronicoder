@@ -1,6 +1,6 @@
-## 👋 Hi there! I'm Peter.
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Arial&size=24&color=FFFFFF&lines=Hi+there!+I'm+Peter.)](https://git.io/typing-svg)
 
-I'm a web developer currently studying at Stamford American International School in Singapore. I mainly dabble in web development, but I am also learning competitive programming and graphics design in my free time. In my free time, I like to travel around Singapore, play video games, and read.
+👋 I'm a web developer currently studying at Stamford American International School in Singapore. I mainly dabble in web development, but I am also learning competitive programming and graphics design in my free time. In my free time, I like to travel around Singapore, play video games, and read.
 
 ### 🏆 Achievements
 - Received Honor Roll of Distinction (top 1%) for the American Mathematics Competition 8 and the Certificate of Achievement for AMC10
