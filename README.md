@@ -1,23 +1,40 @@
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Arial&size=24&color=FFFFFF&lines=Hi+there!+I'm+Peter.)](https://git.io/typing-svg)
+![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Arial&size=32&color=FFFFFF&lines=Hi+there!+I'm+Peter.+🚀)
 
-👋 I'm a web developer currently studying at Stamford American International School in Singapore. I mainly dabble in web development, but I am also learning competitive programming and graphics design in my free time. In my free time, I like to travel around Singapore, play video games, and read.
+👋 I'm a web developer currently studying at Stamford American International School in Singapore. I mainly dabble in web development but also learn competitive programming and graphics design in my free time. In addition, I like to travel around Singapore, play video games, and read in my free time.
 
-### 🏆 Achievements
+## 🏆 Achievements
+
 - Received Honor Roll of Distinction (top 1%) for the American Mathematics Competition 8 and the Certificate of Achievement for AMC10
-- First place in Singapore for 
+- First place in Singapore for
   - BEBRAS International Challenge on Informatics and Computational Thinking (BEBRAS)
   - Design Thinking with Robotics and Computational Thinking International Competition Finals (DrCT)
   - Singapore Math Global Assessments Final (SINGA)
 
-### 📚 Experience
+## 📚 Experience
+
 - Founder of Cogniforge, a free platform that focuses on personalized learning with mentor-guided projects and encourages an interconnected community through co-work sessions and peer-to-peer collaboration
 - Current head of the Development and Implementation team at the [International Junior Honour Society Student Leadership Council](https://ijhscommunity.org/)
   - Former head of the web development team at the SLC
 
-### 🚢 Projects I've worked on
+## 🚢 Projects I've worked on
+
 - Contributed to [buildspace faq](https://github.com/buildspace/buildspace-faq), a web app for helping users to find answers to frequently asked questions about buildspace projects
 - Created a web app for helping users to [visualize Singapore taxi locations](https://singapore-taxified.cytronicoder.repl.co) using real-time taxi availability data from data.gov.sg
 - Built a Connect 4 solver during [Fundamentals of Computer Science](https://cty.jhu.edu/programs/summer/courses/fundamentals-of-computer-science-fcps); ~it got beaten by another algorithm so~ then I made [a better one](https://github.com/cytronicoder/connect-four)
+
+## 👨‍🎓 Education
+
+### Stamford American International School, Singapore: Jan 2018 - Jun 2026
+
+Activities and societies: Hack Club, Jazz band, Peer Tutoring, Speak Up Stamford, Swimming
+
+- Honor roll (6th, 7th, 8th)
+- Subject awards (awarded to 2 students each year)
+  - MYP Mathematics (6th, 7th, 8th)
+  - MYP Spanish Language Acquisition (6th)
+  - Outstanding Contribution to Service award (8th)
+- Elected as an advisory representative; subsequently elected into the Student Council (8th)
+- Designed the yearbook cover for middle school (8th)
 
 <hr />
 
@@ -47,8 +64,10 @@
 <hr />
 
 ### 🤝 Collaboration
+
 I believe that collaborating on projects is a great way to learn from each other and build up experience; feel free to hit me up on Discord (cytronicoder#4975) or email me at [novodoodle@gmail.com](mailto:novodoodle@gmail.com) if you want to work on a project together.
 
 ### 📢 Socials
+
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/cytronicoder)
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://www.twitter.com/cytronicoder)
