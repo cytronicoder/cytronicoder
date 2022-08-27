@@ -1,6 +1,6 @@
 ![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Arial&size=32&color=FFFFFF&lines=Hi+there!+I'm+Peter.+🚀)
 
-👋 I'm a web developer currently studying at Stamford American International School in Singapore. I mainly dabble in web development but also learn competitive programming and graphics design in my free time. In addition, I like to travel around Singapore, play video games, and read in my free time.
+👋 I'm a web developer currently studying at Stamford American International School in Singapore. I mainly dabble in web development but also learn competitive programming and graphics design. In addition, I like to travel around Singapore, play video games, and read in my free time.
 
 ## 🏆 Achievements
 
