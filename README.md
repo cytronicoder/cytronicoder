@@ -27,15 +27,23 @@
 
 ### Stamford American International School, Singapore: Jan 2018 - Jun 2026
 
-Activities and societies: Hack Club, Jazz band, Peer Tutoring, Speak Up Stamford, Swimming
+Activities and societies: Math Honor Society, Student Council, swim team
 
-- Honor roll (6th, 7th, 8th)
+- Founder of the SAIS Hack Club; 20+ members registered (9th)
+- Media chair @ SAIS High School Student Council, Peer Tutoring, Speak Up Stamford, and MHS (9th)
+- Elected as an advisory representative; subsequently elected into the Student Council (8th)
+- Designed the yearbook cover for middle school (8th)
 - Subject awards (awarded to 2 students each year)
   - MYP Mathematics (6th, 7th, 8th)
   - MYP Spanish Language Acquisition (6th)
   - Outstanding Contribution to Service award (8th)
-- Elected as an advisory representative; subsequently elected into the Student Council (8th)
-- Designed the yearbook cover for middle school (8th)
+- Honor roll (6th, 7th, 8th)
+
+### Johns Hopkins Center For Talented Youth: Jan 2020 - Jun 2026
+
+- Received Grand Honors in CTY's 2019-2020 Talent Search
+- Received A+ for Honors Precalculus and A for AP® Computer Science A
+- Currntly studying Calculus BC
 
 <hr />
 
@@ -72,3 +80,4 @@ I believe that collaborating on projects is a great way to learn from each other
 
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/cytronicoder)
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://www.twitter.com/cytronicoder)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/cytronicoder/)
