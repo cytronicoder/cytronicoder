@@ -23,28 +23,6 @@
 - Built a Connect 4 solver during [Fundamentals of Computer Science](https://cty.jhu.edu/programs/summer/courses/fundamentals-of-computer-science-fcps); ~it got beaten by another algorithm so~ then I made [a better one](https://github.com/cytronicoder/connect-four) (takes a while to run for some initial position though)
 - Got [Slingshot Verified](https://discord.gg/JcgAA3rJW7) by building a [open-source research and mapping tool](https://github.com/cytronicoder/MapTheConstitution) for lawyers
 
-## 👨‍🎓 Education
-
-### Stamford American International School, Singapore: Jan 2018 - Jun 2026
-
-Activities and societies: Math Honor Society, Student Council, swim team
-
-- Founder of the SAIS Hack Club; 20+ members registered (9th)
-- Media chair @ SAIS High School Student Council, Peer Tutoring, Speak Up Stamford, and MHS (9th)
-- Elected as an advisory representative; subsequently elected into the Student Council (8th)
-- Designed the yearbook cover for middle school (8th)
-- Subject awards (awarded to 2 students each year)
-  - MYP Mathematics (6th, 7th, 8th)
-  - MYP Spanish Language Acquisition (6th)
-  - Outstanding Contribution to Service award (8th)
-- Honor roll (6th, 7th, 8th)
-
-### Johns Hopkins Center For Talented Youth: Jan 2020 - Jun 2026
-
-- Received Grand Honors in CTY's 2019-2020 Talent Search
-- Received A+ for Honors Precalculus and A for AP® Computer Science A
-- Currntly studying Calculus BC
-
 <hr />
 
 ### 🌐 Things I work with
