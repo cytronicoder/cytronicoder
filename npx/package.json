@@ -1,0 +1,22 @@
+{
+  "name": "cytronicoder",
+  "version": "1.0.0",
+  "description": "My own little package, shipped as a NPX tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm i -g && npx cytronicoder"
+  },
+  "bin": {
+    "cytronicoder": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cytronicoder/cytronicoder.git"
+  },
+  "author": "Zeyu Yao <novodoodle@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cytronicoder/cytronicoder/issues"
+  },
+  "homepage": "https://github.com/cytronicoder/cytronicoder#readme"
+}
