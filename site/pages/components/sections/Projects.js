@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import styles from "../../styles/Projects.module.css";
+import styles from "./Projects.module.css";
 
 const owner = "cytronicoder";
 const numProjectsToDisplay = 2;

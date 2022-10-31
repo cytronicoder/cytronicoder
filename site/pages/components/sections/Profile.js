@@ -1,15 +1,13 @@
 import Image from "next/image";
-import styles from "../../styles/Profile.module.css";
+import styles from "./Profile.module.css";
 
-import Projects from "./Projects";
-
-export default function Profile() {
+export default function Profile({ isHack }) {
   return (
     <div className={styles.profile}>
       <div className={styles.profileHeader}>
         <Image
-          src="/profile.jpg"
-          alt="A picture of me"
+          src={isHack ? "/profile-dino.png" : "/profile.jpg"}
+          alt="Profile picture"
           width={200}
           height={200}
           className={styles.profileImage}
@@ -63,12 +61,36 @@ export default function Profile() {
       </div>
 
       <div className={styles.profileDescription}>
-        <p>
-          👋 Hey! I'm Peter, and I am a web developer currently studying in
-          Singapore. I mainly dabble in web development but also learn
-          competitive programming and graphics design. In addition, I like to
-          travel around Singapore, play video games, and read in my free time.
-        </p>
+        {isHack ? (
+          <p>
+            👋 Hey! If you're part of Hack Club, you might know me as{" "}
+            <a
+              href="https://slack.hackclub.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @cytronicoder
+            </a>{" "}
+            on Slack. I'm the founder of the{" "}
+            <a
+              href="https://github.com/sais-hack-club"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              SAIS Hack Club
+            </a>
+            , a high school hack club in Singapore. If you see me around, feel
+            free to say hi! I'm always happy to meet new people and collaborate
+            on projects.
+          </p>
+        ) : (
+          <p>
+            👋 Hey! I'm Peter, and I am a web developer currently studying in
+            Singapore. I mainly dabble in web development but also learn
+            competitive programming and graphics design. In addition, I like to
+            travel around Singapore, play video games, and read in my free time.
+          </p>
+        )}
       </div>
     </div>
   );
