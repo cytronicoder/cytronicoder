@@ -8,7 +8,7 @@ export default function Header() {
         name="description"
         content="My personal website, built with Next.js"
       />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
 
       <meta property="og:title" content="Zeyu Yao" />
       <meta
@@ -17,7 +17,7 @@ export default function Header() {
       />
       <meta
         property="og:image"
-        content="https://cytronicoder.com/og-image.png"
+        content="%PUBLIC_URL%/og-image.png"
       />
 
       <meta name="twitter:title" content="Zeyu Yao" />
@@ -27,7 +27,7 @@ export default function Header() {
       />
       <meta
         name="twitter:image"
-        content="https://cytronicoder.com/og-image.png"
+        content="%PUBLIC_URL%/og-image.png"
       />
 
       <meta name="twitter:card" content="summary_large_image" />
