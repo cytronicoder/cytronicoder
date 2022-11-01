@@ -12,13 +12,14 @@
   align-items: center;
 }
 
+/* hack club button */
 .hack {
   /* top right of view */
   position: absolute;
   top: 2rem;
   right: 2rem;
 
-  padding: 0.5rem 1rem;
+  padding: 0.8rem;
   font-size: 0.8rem;
   font-weight: 600;
   border: 0;
