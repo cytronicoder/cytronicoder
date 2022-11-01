@@ -6,7 +6,7 @@ export default function Profile({ isHack }) {
     <div className={styles.profile}>
       <div className={styles.profileHeader}>
         <Image
-          src={isHack ? "/profile-dino.png" : "/profile.jpg"}
+          src={isHack ? "/profile-hack.jpg" : "/profile.jpg"}
           alt="Profile picture"
           width={200}
           height={200}
