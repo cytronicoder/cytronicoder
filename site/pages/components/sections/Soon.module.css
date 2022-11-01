@@ -1,5 +1,27 @@
-@media (max-width: 600px) {
-  .soon {
-    text-align: center;
-  }
+.soon {
+  text-align: center;
+}
+
+.quoteContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 1rem;
+
+  border: 2px solid #eaeaea;
+  border-radius: 10px;
+}
+
+.quoteText {
+  font-size: 1rem;
+  font-style: italic;
+  margin: 0;
+}
+
+.quoteAuthor {
+  font-size: 0.8rem;
+  font-weight: bold;
 }
