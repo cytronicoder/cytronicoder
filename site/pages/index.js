@@ -4,8 +4,7 @@ import styles from "../styles/Home.module.css";
 
 import Header from "./components/sections/Header";
 import Profile from "./components/sections/Profile";
-// import Projects from "./components/sections/Projects";
-import Soon from "./components/sections/Soon";
+import Widgets from "./components/sections/Widgets";
 
 import Icon from "@hackclub/icons";
 
@@ -46,8 +45,8 @@ export default function Home() {
 
       <main className={styles.main}>
         <Profile isHack={isHack} />
-        {/* <Projects /> */}
-        <Soon />
+
+        {isHack ? <Widgets /> : null}
       </main>
     </div>
   );
