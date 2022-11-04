@@ -2,7 +2,7 @@ import Widget from "../items/Widget";
 import styles from "./Projects.module.css";
 
 export default function Projects({ projects }) {
-  const projectList = randomProjects.map((project) => (
+  const projectList = projects.map((project) => (
     <a
       href={project.html_url}
       key={project.id}
