@@ -14,9 +14,7 @@ export default function Profile({ isHack }) {
   const [projects, setProjects] = useState([]);
 
   const fetchProjects = async () => {
-    const response = await fetch(
-      `https://api.github.com/users/${owner}/repos?sort=updated&per_page=${numProjectsToDisplay}`
-    );
+    const response = await fetch(`https://api.github.com/users/${owner}/repos`);
     const data = await response.json();
     setProjects(data);
   };
@@ -25,10 +23,10 @@ export default function Profile({ isHack }) {
     fetchProjects();
   }, []);
 
-  // show random projects
-  const randomProjects = projects.sort(() => Math.random() - 0.5);
+  // show random projects with a max of numProjectsToDisplay
+  const projectsToDisplay = projects.sort(() => Math.random() - 0.5).slice(0, numProjectsToDisplay);
 
-  const projectList = projects.map((project) => (
+  const projectList = projectsToDisplay.map((project) => (
     <a
       href={project.html_url}
       key={project.id}
