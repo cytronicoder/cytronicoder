@@ -4,7 +4,10 @@ import Image from "next/image";
 import styles from "./Profile.module.css";
 
 import Achievements from "../items/Achievements";
-import Projects from "./Projects";
+import Widget from "../items/Widget";
+
+const owner = "cytronicoder";
+const numProjectsToDisplay = 2;
 
 export default function Profile({ isHack }) {
   // fetch projects from github api
@@ -12,7 +15,7 @@ export default function Profile({ isHack }) {
 
   const fetchProjects = async () => {
     const response = await fetch(
-      "https://api.github.com/users/cytronicoder/repos"
+      `https://api.github.com/users/${owner}/repos?sort=updated&per_page=${numProjectsToDisplay}`
     );
     const data = await response.json();
     setProjects(data);
@@ -21,6 +24,23 @@ export default function Profile({ isHack }) {
   useEffect(() => {
     fetchProjects();
   }, []);
+
+  // show random projects
+  const randomProjects = projects.sort(() => Math.random() - 0.5);
+
+  const projectList = projects.map((project) => (
+    <a
+      href={project.html_url}
+      key={project.id}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <div className={styles.card}>
+        <h2>{project.name}</h2>
+        <p>{project.description}</p>
+      </div>
+    </a>
+  ));
 
   return (
     <div className={styles.profile}>
@@ -116,7 +136,10 @@ export default function Profile({ isHack }) {
             </p>
 
             <Achievements />
-            <Projects projects={projects} />
+
+            <Widget logo="/logos/github.svg" title="Projects">
+              <div className={styles.grid}>{projectList}</div>
+            </Widget>
           </>
         )}
       </div>
