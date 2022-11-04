@@ -1,5 +1,7 @@
 # My personal site
 
+**You can find the 3-minute video demo [here](https://youtu.be/fO9Cr1JFFro). A more detailed version is coming soon.**
+
 This is my personal site. It's built with [Next.js](https://nextjs.org/) and hosted on [Vercel](https://vercel.com/). It's also open source, so you can check out the code [here](https://github.com/cytronicoder/cytronicoder), and you can view the site [here](https://cytronicoder.com) (custom domain 🚀).
 
 ## Process
