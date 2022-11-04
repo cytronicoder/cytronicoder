@@ -6,13 +6,16 @@ import styles from "./Profile.module.css";
 import Achievements from "../items/Achievements";
 import Projects from "./Projects";
 
+const owner = "cytronicoder";
+const numProjectsToDisplay = 2;
+
 export default function Profile({ isHack }) {
   // fetch projects from github api
   const [projects, setProjects] = useState([]);
 
   const fetchProjects = async () => {
     const response = await fetch(
-      "https://api.github.com/users/cytronicoder/repos"
+      `https://api.github.com/users/${owner}/repos?sort=updated&per_page=${numProjectsToDisplay}`
     );
     const data = await response.json();
     setProjects(data);
@@ -21,6 +24,9 @@ export default function Profile({ isHack }) {
   useEffect(() => {
     fetchProjects();
   }, []);
+
+  // show random projects
+  const randomProjects = projects.sort(() => Math.random() - 0.5);
 
   return (
     <div className={styles.profile}>
@@ -116,7 +122,7 @@ export default function Profile({ isHack }) {
             </p>
 
             <Achievements />
-            <Projects projects={projects} />
+            <Projects projects={randomProjects} />
           </>
         )}
       </div>
