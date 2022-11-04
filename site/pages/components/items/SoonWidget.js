@@ -1,7 +1,9 @@
 import { useEffect } from "react";
-import styles from "./Soon.module.css";
+import styles from "./SoonWidget.module.css";
 
-export default function Soon() {
+import Code from "./Code";
+
+export default function SoonWidget() {
   useEffect(() => {
     const quote = fetch("https://api.quotable.io/random")
       .then((response) => response.json())
@@ -23,6 +25,15 @@ export default function Soon() {
         <p className={styles.quoteText} id="quote"></p>
         <p className={styles.quoteAuthor} id="author"></p>
       </div>
+
+      <Code language="javascript">
+        {`const quote = fetch("https://api.quotable.io/random")
+  .then((response) => response.json())
+  .then((data) => {
+    document.getElementById("quote").innerHTML = data.content;
+    document.getElementById("author").innerHTML = data.author;
+  });`}
+      </Code>
     </div>
   );
 }

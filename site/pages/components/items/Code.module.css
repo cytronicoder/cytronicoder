@@ -1,31 +1,9 @@
 .code {
-  color: #9900ff;
-  background: #fafafa;
+  text-align: left; /* override default center alignment */
+  color: #ec3750;
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-/* languages-specific CSS */
-.javascript {
-  color: darkgoldenrod;
-}
-
-.python {
-  color: darkblue;
-}
-
-@media (prefers-color-scheme: dark) {
-  .code {
-    color: #b266ff;
-    background: #111;
-  }
-  .javascript {
-    color: yellow;
-  }
-  .python {
-    color: lightblue;
-  }
 }

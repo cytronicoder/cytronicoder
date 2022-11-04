@@ -3,7 +3,7 @@ import styles from "./Code.module.css";
 export default function Code({ language, children }) {
   return (
     <pre className={styles.code}>
-      <code className={styles[language]}>{children}</code>
+      <code>{children}</code>
     </pre>
   );
 }

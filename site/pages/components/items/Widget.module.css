@@ -1,0 +1,30 @@
+.widget {
+  width: 80%;
+  padding: 1rem;
+}
+
+.widgetHeader {
+  display: flex;
+
+  color: #ec3750;
+  background-color: white;
+  border-radius: 9999px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.widgetTitle {
+  margin: 0 1rem;
+}
+
+.widgetToggle:active {
+  transform: scale(1.1);
+}
+
+.widgetBody {
+  margin: 1rem 0;
+  padding: 1rem;
+
+  border: 4px solid #eaeaea;
+  border-radius: 10px;
+}

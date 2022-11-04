@@ -45,8 +45,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <Profile isHack={isHack} />
-
-        {isHack ? <Widgets /> : null}
+        <Widgets isHack={isHack} />
       </main>
     </div>
   );
