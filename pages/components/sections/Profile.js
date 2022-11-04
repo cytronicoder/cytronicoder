@@ -84,7 +84,7 @@ export default function Profile({ isHack }) {
         {isHack ? (
           <>
             <p>
-              👋 Hey! If you're part of Hack Club, you might know me as{" "}
+              👋 Hey! If you are part of Hack Club, you might know me as{" "}
               <a
                 href="https://slack.hackclub.com/"
                 target="_blank"
@@ -92,7 +92,7 @@ export default function Profile({ isHack }) {
               >
                 @cytronicoder
               </a>{" "}
-              on Slack. I'm the founder of the{" "}
+              on Slack. I am the founder of the{" "}
               <a
                 href="https://github.com/sais-hack-club"
                 target="_blank"
@@ -101,14 +101,14 @@ export default function Profile({ isHack }) {
                 SAIS Hack Club
               </a>
               , a high school hack club in Singapore. If you see me around, feel
-              free to say hi! I'm always happy to meet new people and
+              free to say hi! I am always happy to meet new people and
               collaborate on projects.
             </p>
           </>
         ) : (
           <>
             <p>
-              👋 Hey! I'm Peter, and I am a web developer currently studying in
+              👋 Hey! I am Peter, a web developer currently studying in
               Singapore. I mainly dabble in web development but also learn
               competitive programming and graphics design. In addition, I like
               to travel around Singapore, play video games, and read in my free

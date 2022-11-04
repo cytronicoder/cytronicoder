@@ -14,8 +14,8 @@ export default function Projects({ projects }) {
   const projectsToDisplay = randomProjects.slice(0, numProjectsToDisplay);
 
   const projectList = projectsToDisplay.map((project) => (
-    <a href={project.html_url} target="_blank" rel="noopener noreferrer">
-      <div className={styles.card} key={project.id}>
+    <a href={project.html_url} key={project.id} target="_blank" rel="noopener noreferrer">
+      <div className={styles.card}>
         <h2>{project.name}</h2>
         <p>{project.description}</p>
       </div>

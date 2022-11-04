@@ -5,7 +5,7 @@ export default function BankWidget() {
   return (
     <Widget logo="/hack/bank.svg" title="SAIS Hack Club Bank">
       <p>
-        The SAIS Hack Club now has a bank account! We're currently working on
+        The SAIS Hack Club now has a bank account! We are currently working on
         getting everything set up, but in the meantime, you can donate to us
         through the form linked{" "}
         <a
