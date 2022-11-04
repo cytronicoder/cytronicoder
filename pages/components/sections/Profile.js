@@ -25,9 +25,6 @@ export default function Profile({ isHack }) {
     fetchProjects();
   }, []);
 
-  // show random projects
-  const randomProjects = projects.sort(() => Math.random() - 0.5);
-
   return (
     <div className={styles.profile}>
       <div className={styles.profileHeader}>
@@ -122,7 +119,7 @@ export default function Profile({ isHack }) {
             </p>
 
             <Achievements />
-            <Projects projects={randomProjects} />
+            <Projects projects={projects.sort(() => Math.random() - 0.5)} />
           </>
         )}
       </div>
