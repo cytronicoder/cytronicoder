@@ -1,9 +1,27 @@
+import { useState, useEffect } from "react";
+
 import Image from "next/image";
 import styles from "./Profile.module.css";
 
 import Achievements from "../items/Achievements";
+import Projects from "./Projects";
 
 export default function Profile({ isHack }) {
+  // fetch projects from github api
+  const [projects, setProjects] = useState([]);
+
+  const fetchProjects = async () => {
+    const response = await fetch(
+      "https://api.github.com/users/cytronicoder/repos"
+    );
+    const data = await response.json();
+    setProjects(data);
+  };
+
+  useEffect(() => {
+    fetchProjects();
+  }, []);
+
   return (
     <div className={styles.profile}>
       <div className={styles.profileHeader}>
@@ -98,6 +116,7 @@ export default function Profile({ isHack }) {
             </p>
 
             <Achievements />
+            <Projects projects={projects} />
           </>
         )}
       </div>

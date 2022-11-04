@@ -1,21 +1,10 @@
-import { useState, useEffect } from "react";
+import Widget from "../items/Widget";
 import styles from "./Projects.module.css";
 
 const owner = "cytronicoder";
 const numProjectsToDisplay = 2;
 
-export default function Projects() {
-  // fetch projects from github api
-  const [projects, setProjects] = useState([]);
-
-  useEffect(() => {
-    fetch(`https://api.github.com/users/${owner}/repos`)
-      .then((res) => res.json())
-      .then((data) => {
-        setProjects(data);
-      });
-  }, []);
-
+export default function Projects({ projects }) {
   // remove bio project
   const filteredProjects = projects.filter((project) => project.name !== owner);
 
@@ -33,23 +22,29 @@ export default function Projects() {
     </a>
   ));
 
-  return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>Projects</h1>
-      <p>
-        Here is a list of some of my projects. You can find more on my{" "}
-        <a
-          href="https://github.com/cytronicoder"
-          target="_blank"
-          rel="noreferrer noopener"
-          className={styles.link}
-        >
-          GitHub
-        </a>
-        .
-      </p>
+  // return (
+  //   <div className={styles.container}>
+  //     <h1 className={styles.title}>Projects</h1>
+  //     <p>
+  //       Here is a list of some of my projects. You can find more on my{" "}
+  //       <a
+  //         href="https://github.com/cytronicoder"
+  //         target="_blank"
+  //         rel="noreferrer noopener"
+  //         className={styles.link}
+  //       >
+  //         GitHub
+  //       </a>
+  //       .
+  //     </p>
 
+  //     <div className={styles.grid}>{projectList}</div>
+  //   </div>
+  // );
+
+  return (
+    <Widget logo="/logos/github.svg" title="Projects">
       <div className={styles.grid}>{projectList}</div>
-    </div>
+    </Widget>
   );
 }

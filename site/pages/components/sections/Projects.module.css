@@ -3,12 +3,9 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
 }
 
 .card {
-  width: 100%;
-
   margin: 1rem;
   padding: 1.5rem;
   text-align: left;

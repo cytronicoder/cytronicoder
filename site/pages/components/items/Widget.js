@@ -14,7 +14,10 @@ export default function Widget({ logo, title, children }) {
         />
         <h2 className={styles.widgetTitle}>{title}</h2>
       </div>
-      <div className={styles.widgetBody}>{children}</div>
+      <div className={styles.widgetBody}>
+        {children}
+      </div>
+    
     </div>
   );
 }

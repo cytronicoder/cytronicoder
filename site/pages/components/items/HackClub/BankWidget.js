@@ -1,4 +1,5 @@
 import Widget from "../Widget";
+import styles from "../Widget.module.css";
 
 export default function BankWidget() {
   return (
@@ -8,6 +9,7 @@ export default function BankWidget() {
         getting everything set up, but in the meantime, you can donate to us
         through the form linked{" "}
         <a
+          className={styles.link}
           href="https://bank.hackclub.com/donations/start/sais-hack-club"
           target="_blank"
           rel="noopener noreferrer"

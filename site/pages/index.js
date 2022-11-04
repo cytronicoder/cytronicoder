@@ -9,6 +9,7 @@ import Widgets from "./components/sections/Widgets";
 import Icon from "@hackclub/icons";
 
 export default function Home() {
+  // check if hack mode is enabled
   const [isHack, setIsHack] = useState(false);
 
   const toggleHack = () => {
