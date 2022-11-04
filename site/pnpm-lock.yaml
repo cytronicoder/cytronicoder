@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@hackclub/icons': ^0.0.10
   eslint: 8.26.0
   eslint-config-next: 13.0.0
   next: ^13.0.0
@@ -8,6 +9,7 @@ specifiers:
   react-dom: ^18.2.0
 
 dependencies:
+  '@hackclub/icons': 0.0.10_react@18.2.0
   next: 13.0.2_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -49,6 +51,14 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@hackclub/icons/0.0.10_react@18.2.0:
+    resolution: {integrity: sha512-16RG1voGcXTSAMvjH1OkK1zPRcRsQ0jL7b2JLUBGgHkMdMJHdfK+vBBHYCOxbdho15xPsewA4fQYGyMxMLaZgw==}
+    peerDependencies:
+      react: ^16.13.1
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /@humanwhocodes/config-array/0.11.7:
     resolution: {integrity: sha512-kBbPWzN8oVMLb0hOUYXhmxggL/1cJE6ydvjDIGi9EnAGUyA7cLVKQg+d/Dsm+KZwx2czGHrCmMVLiyg8s5JPKw==}
