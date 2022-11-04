@@ -14,7 +14,7 @@ export default function Widgets({ isHack }) {
         </>
       ) : (
         <>
-          <SoonWidget />
+          {/* <SoonWidget /> */}
         </>
       )}
     </div>

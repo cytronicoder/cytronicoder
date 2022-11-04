@@ -1,5 +1,5 @@
 .widget {
-  width: 80%;
+  max-width: 800px;
   padding: 1rem;
 }
 

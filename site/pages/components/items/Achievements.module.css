@@ -1,0 +1,19 @@
+.achievements {
+  font-size: 1.2rem;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
+
+.achievement {
+  display: flex;
+    padding: 1rem;
+}
+
+@media (max-width: 600px) {
+  .achievement {
+    flex-direction: column;
+  }
+}
