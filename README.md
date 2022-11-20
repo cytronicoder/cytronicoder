@@ -12,7 +12,7 @@
 
 ## 📚 Experience
 
-- **Founder of the SAIS Hack Club, the 4th one in Singapore aiming to provide SAIS students with an experience that inspires, educates, and develops future leaders in computer science**
+- **Founder of the SAIS Hack Club, the 4th one in Singapore, aiming to provide SAIS students with an experience that inspires, educates, and develops future leaders in computer science**
 - Current head of the Development and Implementation team at the [International Junior Honour Society Student Leadership Council](https://ijhscommunity.org/)
   - Former head of the web development team at the SLC
 
