@@ -12,7 +12,7 @@
 
 ## 📚 Experience
 
-- Founder of Cogniforge, a free platform that focuses on personalized learning with mentor-guided projects and encourages an interconnected community through co-work sessions and peer-to-peer collaboration
+- **Founder of the SAIS Hack Club, the 4th one in Singapore aiming to provide SAIS students with an experience that inspires, educates, and develops future leaders in computer science**
 - Current head of the Development and Implementation team at the [International Junior Honour Society Student Leadership Council](https://ijhscommunity.org/)
   - Former head of the web development team at the SLC
 
