@@ -1,4 +1,7 @@
-![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Arial&size=32&color=FFFFFF&lines=Hi+there!+I'm+Peter.+🚀)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.herokuapp.com?font=Arial&size=32&color=FFFFFF&lines=Hi+there!+I'm+Peter.+🚀" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Arial&size=32&color=000000&lines=Hi+there!+I'm+Peter.+🚀" />
+</picture>
 
 👋 I'm a web developer currently studying in Singapore. I mainly dabble in web development but also learn competitive programming and graphics design. In addition, I like to travel around Singapore, play video games, and read in my free time.
 
