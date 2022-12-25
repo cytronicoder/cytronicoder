@@ -7,11 +7,12 @@
 
 ## 🏆 Achievements
 
-- Received Honor Roll of Distinction (top 1%) for the American Mathematics Competition 8 and the Certificate of Achievement for AMC10
+- Gold division in USACO
+- Received Honor Roll of Distinction (top 1%) for the AMC 8 and Certificate of Achievement for AMC 10
 - First place in Singapore for
-  - BEBRAS International Challenge on Informatics and Computational Thinking (BEBRAS)
-  - Design Thinking with Robotics and Computational Thinking International Competition Finals (DrCT)
-  - Singapore Math Global Assessments Final (SINGA)
+  - BEBRAS International Challenge on Informatics and Computational Thinking (BEBRAS, 2022)
+  - Singapore Math Global Assessments Final (SINGA, 2022)
+  - Design Thinking with Robotics and Computational Thinking International Competition Finals (DrCT, 2021)
 
 ## 📚 Experience
 
