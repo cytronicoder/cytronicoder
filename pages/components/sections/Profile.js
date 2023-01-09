@@ -95,6 +95,19 @@ export default function Profile({ isHack }) {
               className={styles.socialMediaIcon}
             />
           </a>
+          <a
+            href="https://linkedin.com/in/cytronicoder"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/logos/linkedin.svg"
+              alt="LinkedIn logo"
+              width={32}
+              height={32}
+              className={styles.socialMediaIcon}
+            />
+          </a>
         </div>
       </div>
 
