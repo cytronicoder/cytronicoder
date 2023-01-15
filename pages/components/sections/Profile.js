@@ -139,18 +139,17 @@ export default function Profile({ isHack }) {
         ) : (
           <>
             <p>
-              👋 Hey! I am Peter, a web developer currently studying in
-              Singapore. I mainly dabble in web development but also learn
-              competitive programming and graphics design. In addition, I like
-              to travel around Singapore, play video games, and read in my free
-              time.
+              👋 Hey! I am Peter, a student developer currently studying in Singapore.
+              I started programming at 13, and in the past year, I have <a href="https://github.com/buildspace/buildspace-faq" target="_blank" rel="noopener noreferrer">contributed documentation</a> for a startup that recently raised $10M from a16z,{" "}
+              worked with AI to create a fully functional <a href="https://github.com/cytronicoder/stock-data-visualiser" target="_blank" rel="noopener noreferrer">LSTM model</a> that can predict stock prices, and did so much more.
+              I plan to pursue further my passion for computer science to contribute to my community.
             </p>
 
             <Achievements />
 
-            <Widget logo="/logos/github.svg" title="Projects">
+            {/* <Widget logo="/logos/github.svg" title="Projects">
               <div className={styles.grid}>{projectList}</div>
-            </Widget>
+            </Widget> */}
           </>
         )}
       </div>

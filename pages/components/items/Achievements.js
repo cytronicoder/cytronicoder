@@ -7,6 +7,9 @@ export default function Achievements() {
       <div className={styles.achievements}>
         <ul className={styles.achievementsList}>
           <li className={styles.achievement}>
+            Gold division in USACO
+          </li>
+          <li className={styles.achievement}>
             Received Honor Roll of Distinction (top 1%) for the American
             Mathematics Competition 8 and the Certificate of Achievement for
             AMC10
