@@ -37,12 +37,12 @@ export default function Home() {
     <div className={styles.container}>
       <Header />
 
-      <Icon
+      {/* <Icon
         glyph="clubs"
         size={64}
         onClick={toggleHack}
         className={styles.hack}
-      />
+      /> */}
 
       <main className={styles.main}>
         <Profile isHack={isHack} />
