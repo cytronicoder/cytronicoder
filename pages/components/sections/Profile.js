@@ -4,7 +4,6 @@ import Image from "next/image";
 import styles from "./Profile.module.css";
 
 import Achievements from "../items/Achievements";
-import Widget from "../items/Widget";
 
 const owner = "cytronicoder";
 const numProjectsToDisplay = 2;
@@ -112,46 +111,18 @@ export default function Profile({ isHack }) {
       </div>
 
       <div className={styles.profileDescription}>
-        {isHack ? (
-          <>
-            <p>
-              👋 Hey! If you are part of Hack Club, you might know me as{" "}
-              <a
-                href="https://slack.hackclub.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                @cytronicoder
-              </a>{" "}
-              on Slack. I am the founder of the{" "}
-              <a
-                href="https://github.com/sais-hack-club"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                SAIS Hack Club
-              </a>
-              , a high school hack club in Singapore. If you see me around, feel
-              free to say hi! I am always happy to meet new people and
-              collaborate on projects.
-            </p>
-          </>
-        ) : (
-          <>
-            <p>
-              👋 Hey! I am Peter, a student developer currently studying in Singapore.
-              I started programming at 13, and in the past year, I have <a href="https://github.com/buildspace/buildspace-faq" target="_blank" rel="noopener noreferrer">contributed documentation</a> for a startup that recently raised $10M from a16z,{" "}
-              worked with AI to create a fully functional <a href="https://github.com/cytronicoder/stock-data-visualiser" target="_blank" rel="noopener noreferrer">LSTM model</a> that can predict stock prices, and did so much more.
-              I plan to pursue further my passion for computer science to contribute to my community.
-            </p>
+        <p>
+          👋 Hey! I am Peter, a student developer currently studying in Singapore.
+          I started programming at 13, and in the past year, I have <a href="https://github.com/buildspace/buildspace-faq" target="_blank" rel="noopener noreferrer">contributed documentation</a> for a startup that recently raised $10M from a16z,{" "}
+          worked with AI to create a fully functional <a href="https://github.com/cytronicoder/stock-data-visualiser" target="_blank" rel="noopener noreferrer">LSTM model</a> that can predict stock prices, and did so much more.
+          I plan to pursue further my passion for computer science to contribute to my community.
+        </p>
 
-            <Achievements />
+        <Achievements />
 
-            {/* <Widget logo="/logos/github.svg" title="Projects">
+        {/* <Widget logo="/logos/github.svg" title="Projects">
               <div className={styles.grid}>{projectList}</div>
             </Widget> */}
-          </>
-        )}
       </div>
     </div>
   );
