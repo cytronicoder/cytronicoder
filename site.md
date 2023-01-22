@@ -20,20 +20,11 @@ I started this site with the intention of learning Next.js and Vercel. I've been
 
 `components/`: Contains the header and footer components, as well as all of the neat sections on the main page.
 
-#### Hack mode disabled
-
 - `sections/Header.js`: The header component. It contains the navigation bar and the title.
 - `sections/Profile.js`: The profile section. It contains a picture of me and a short description.
 - `sections/Projects.js`: The projects section. It contains a list of my projects, with links to their GitHub repositories.
 - `sections/Widgets.js`: Shows a list of widgets, which are just random things I've made.
   - `sections/items/Achievements`: A list of my achievements.
-
-#### Hack mode enabled
-
-Instead of `sections/Projects.js`, the following components are used:
-
-- `sections/Widgets.js`
-  - `sections/items/HackClub`: A collection of [Hack Club](https://hackclub.com/) updates.
 
 ### `public/`
 
