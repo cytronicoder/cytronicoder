@@ -1,3 +1,8 @@
+.soon {
+    width: 100%;
+    max-width: 800px;
+}
+
 .quoteContainer {
     display: flex;
     flex-direction: column;
@@ -5,7 +10,6 @@
     text-align: center;
     justify-content: center;
     margin: 0 auto;
-    max-width: 800px;
     padding: 1rem;
 
     border: 2px solid white;
