@@ -1,49 +1,17 @@
-import { useState, useEffect } from "react";
-
 import Image from "next/image";
 import styles from "./Profile.module.css";
 
-import Achievements from "../items/Achievements";
+import GitHubIcon from "@/logos/github.svg";
+import TwitterIcon from "@/logos/twitter.svg";
+import InstagramIcon from "@/logos/instagram.svg";
+import LinkedInIcon from "@/logos/linkedin.svg";
 
-const owner = "cytronicoder";
-const numProjectsToDisplay = 2;
-
-export default function Profile({ isHack }) {
-  // fetch projects from github api
-  const [projects, setProjects] = useState([]);
-
-  const fetchProjects = async () => {
-    const response = await fetch(`https://api.github.com/users/${owner}/repos`);
-    const data = await response.json();
-    setProjects(data);
-  };
-
-  useEffect(() => {
-    fetchProjects();
-  }, []);
-
-  // show random projects with a max of numProjectsToDisplay
-  const projectsToDisplay = projects.sort(() => Math.random() - 0.5).slice(0, numProjectsToDisplay);
-
-  const projectList = projectsToDisplay.map((project) => (
-    <a
-      href={project.html_url}
-      key={project.id}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <div className={styles.card}>
-        <h2>{project.name}</h2>
-        <p>{project.description}</p>
-      </div>
-    </a>
-  ));
-
+export default function Profile() {
   return (
     <div className={styles.profile}>
       <div className={styles.profileHeader}>
         <Image
-          src={isHack ? "/profile-hack.jpg" : "/profile.jpg"}
+          src="/profile.jpeg"
           alt="Profile picture"
           width={200}
           height={200}
@@ -61,7 +29,7 @@ export default function Profile({ isHack }) {
             rel="noopener noreferrer"
           >
             <Image
-              src="/logos/github.svg"
+              src={GitHubIcon}
               alt="GitHub logo"
               width={32}
               height={32}
@@ -74,7 +42,7 @@ export default function Profile({ isHack }) {
             rel="noopener noreferrer"
           >
             <Image
-              src="/logos/twitter.svg"
+              src={TwitterIcon}
               alt="Twitter logo"
               width={32}
               height={32}
@@ -87,7 +55,7 @@ export default function Profile({ isHack }) {
             rel="noopener noreferrer"
           >
             <Image
-              src="/logos/instagram.svg"
+              src={InstagramIcon}
               alt="Instagram logo"
               width={32}
               height={32}
@@ -100,7 +68,7 @@ export default function Profile({ isHack }) {
             rel="noopener noreferrer"
           >
             <Image
-              src="/logos/linkedin.svg"
+              src={LinkedInIcon}
               alt="LinkedIn logo"
               width={32}
               height={32}
@@ -117,12 +85,6 @@ export default function Profile({ isHack }) {
           worked with AI to create a fully functional <a href="https://github.com/cytronicoder/stock-data-visualiser" target="_blank" rel="noopener noreferrer">LSTM model</a> that can predict stock prices, and did so much more.
           I plan to pursue further my passion for computer science to contribute to my community.
         </p>
-
-        <Achievements />
-
-        {/* <Widget logo="/logos/github.svg" title="Projects">
-              <div className={styles.grid}>{projectList}</div>
-            </Widget> */}
       </div>
     </div>
   );
