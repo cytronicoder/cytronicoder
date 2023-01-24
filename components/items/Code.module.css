@@ -1,4 +1,5 @@
 .code {
+    text-align: left; /* override the default */
     font-family: monospace;
     font-size: 1.2em;
     background-color: #ec3750;

@@ -22,3 +22,9 @@
     -ms-flex-align: center;
     align-items: center;
 }
+
+@media (max-width: 600px) {
+    .main {
+        text-align: center;
+    }
+}
