@@ -1,11 +1,7 @@
 import Head from "next/head";
-import Profile from "./components/sections/Profile";
-import SoonWidget from "./components/items/SoonWidget";
-
-import { Inter } from '@next/font/google'
+import Profile from "@/components/sections/Profile";
+import SoonWidget from "@/components/items/SoonWidget";
 import styles from '@/styles/Home.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 

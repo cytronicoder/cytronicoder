@@ -1,6 +1,11 @@
 import Image from "next/image";
 import styles from "./Profile.module.css";
 
+import GitHubIcon from "@/logos/github.svg";
+import TwitterIcon from "@/logos/twitter.svg";
+import InstagramIcon from "@/logos/instagram.svg";
+import LinkedInIcon from "@/logos/linkedin.svg";
+
 export default function Profile() {
   return (
     <div className={styles.profile}>
@@ -24,7 +29,7 @@ export default function Profile() {
             rel="noopener noreferrer"
           >
             <Image
-              src="/logos/github.svg"
+              src={GitHubIcon}
               alt="GitHub logo"
               width={32}
               height={32}
@@ -37,7 +42,7 @@ export default function Profile() {
             rel="noopener noreferrer"
           >
             <Image
-              src="/logos/twitter.svg"
+              src={TwitterIcon}
               alt="Twitter logo"
               width={32}
               height={32}
@@ -50,7 +55,7 @@ export default function Profile() {
             rel="noopener noreferrer"
           >
             <Image
-              src="/logos/instagram.svg"
+              src={InstagramIcon}
               alt="Instagram logo"
               width={32}
               height={32}
@@ -63,7 +68,7 @@ export default function Profile() {
             rel="noopener noreferrer"
           >
             <Image
-              src="/logos/linkedin.svg"
+              src={LinkedInIcon}
               alt="LinkedIn logo"
               width={32}
               height={32}
