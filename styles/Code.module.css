@@ -2,6 +2,7 @@
     text-align: left; /* override the default */
     font-family: monospace;
     font-size: 1.2em;
+    color: #fff;
     background-color: #ec3750;
     padding: 0.5em;
     border-radius: 5px;

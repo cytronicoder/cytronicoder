@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Profile from "@/components/sections/Profile";
-import SoonWidget from "@/components/items/SoonWidget";
-import Webring from "@/components/items/Webring";
+import Profile from "@/components/Profile";
+import SoonWidget from "@/components/SoonWidget";
+import Webring from "@/components/Webring";
 import styles from '@/styles/Home.module.css'
 
 export default function Home() {

@@ -1,4 +1,4 @@
-import styles from "./Code.module.css";
+import styles from "@/styles/Code.module.css";
 
 export default function Code({ children }) {
   return (
