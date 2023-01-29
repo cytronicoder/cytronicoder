@@ -13,14 +13,14 @@ export default function Konjer() {
                 <title>Konjer | Zeyu Yao</title>
                 <meta
                     name="description"
-                    content="I've partnered with Konjer to help bring books alive."
+                    content="I have partnered with Konjer to help bring books alive."
                 />
                 <link rel="icon" href="/favicon.ico" />
 
                 <meta property="og:title" content="Konjer | Zeyu Yao" />
                 <meta
                     property="og:description"
-                    content="I've partnered with Konjer to help bring books alive."
+                    content="I have partnered with Konjer to help bring books alive."
                 />
                 <meta
                     property="og:image"
@@ -30,7 +30,7 @@ export default function Konjer() {
                 <meta name="twitter:title" content="Konjer | Zeyu Yao" />
                 <meta
                     name="twitter:description"
-                    content="I've partnered with Konjer to help bring books alive."
+                    content="I have partnered with Konjer to help bring books alive."
                 />
                 <meta
                     name="twitter:image"
@@ -81,13 +81,13 @@ export default function Konjer() {
                         Support Konjer and bring books alive!
                     </h1>
                     <p className={styles.description}>
-                        I've partnered with Konjer, a new startup from <a href="https://www.linkedin.com/in/momin-kaleem/">MO</a> to help bring books alive through artificial intelligence. You can support Konjer by <a href="https://www.konjer.xyz/">signing up</a> for the beta!
+                        I have partnered with Konjer, a new startup from <a href="https://www.linkedin.com/in/momin-kaleem/">MO</a> to help bring books alive through artificial intelligence. You can support Konjer by <a href="https://www.konjer.xyz/">signing up</a> for the beta!
                     </p>
                     <h2 className={styles.subtitle}>
                         What so cool about Konjer?
                     </h2>
                     <p className={styles.description}>
-                        Go check out the books at <a href="https://portal.konjer.xyz/">portal.konjer.xyz</a> and see for yourself! Each book has a unique experience, and you can ask it any question you want. It's like having someone who has studied the book for their entire life, and they're ready to answer any question you have.
+                        Go check out the books at <a href="https://portal.konjer.xyz/">portal.konjer.xyz</a> and see for yourself! Each book has a unique experience, and you can ask it any question you want. It is like having someone who has studied the book for their entire life, and they are ready to answer any question you have.
                     </p>
                     <KonjerAffiliate />
                 </div>
