@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./Profile.module.css";
+import styles from "@/styles/Profile.module.css";
 
 import GitHubIcon from "@/logos/github.svg";
 import TwitterIcon from "@/logos/twitter.svg";
