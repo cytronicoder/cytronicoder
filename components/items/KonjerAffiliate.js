@@ -7,7 +7,7 @@ export default function KonjerAffiliate() {
             <Script src="https://gumroad.com/js/gumroad.js" />
 
             <div className={styles.konjerAffiliate}>
-                <p className={styles.description}>You can also keep the library alive through donations or by buying a custom book!</p>
+                <p className={styles.description}>You can keep the library alive through donations or by buying a custom book!</p>
                 <div className={styles.donate}>
                     <a class="gumroad-button" href="https://gumroad.com/a/963666131/ioyybt" data-gumroad-overlay-checkout="true">Keep the library alive on</a>
                     <a class="gumroad-button" href="https://gumroad.com/a/963666131/mbcngf" data-gumroad-overlay-checkout="true">Get a custom book on</a>

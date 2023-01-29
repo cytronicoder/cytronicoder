@@ -81,7 +81,7 @@ export default function Konjer() {
                         Support Konjer and bring books alive!
                     </h1>
                     <p className={styles.description}>
-                        I have partnered with Konjer, a new startup from <a href="https://www.linkedin.com/in/momin-kaleem/">MO</a> to help bring books alive through artificial intelligence. You can support Konjer by <a href="https://www.konjer.xyz/">signing up</a> for the beta!
+                        I have partnered with Konjer, a new startup from <a href="https://www.linkedin.com/in/momin-kaleem/">MO</a> to help bring books alive through artificial intelligence. You can support Konjer by <a href="https://www.konjer.xyz/">checking out their website!</a>
                     </p>
                     <h2 className={styles.subtitle}>
                         What so cool about Konjer?
