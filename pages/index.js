@@ -3,6 +3,7 @@ import Profile from "@/components/sections/Profile";
 import Alert from "@/components/items/Alert";
 // import SoonWidget from "@/components/items/SoonWidget";
 import Webring from "@/components/items/Webring";
+
 import styles from '@/styles/Home.module.css'
 
 export default function Home() {

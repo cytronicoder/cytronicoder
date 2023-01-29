@@ -1,0 +1,43 @@
+.soon {
+    width: 100%;
+    max-width: 800px;
+}
+
+.soonText {
+    background-image: linear-gradient(180deg, #ec3750, #ec3750);
+    background-repeat: no-repeat;
+    background-position: 4px bottom;
+    background-size: 100% 10px;
+    text-decoration: none;
+}
+
+.quoteContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.quoteText {
+    color: #ec3750;
+    font-style: italic;
+    margin: 0;
+}
+
+.quoteAuthor {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+}
