@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import styles from "./SoonWidget.module.css";
+import styles from "@/styles/SoonWidget.module.css";
 
 import Code from "./Code";
 

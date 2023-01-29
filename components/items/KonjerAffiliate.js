@@ -1,5 +1,5 @@
 import Script from "next/script";
-import styles from "./KonjerAffiliate.module.css";
+import styles from "@/styles/KonjerAffiliate.module.css";
 
 export default function KonjerAffiliate() {
     return (
