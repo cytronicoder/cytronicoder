@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Profile from "@/components/sections/Profile";
-import SoonWidget from "@/components/items/SoonWidget";
+import Alert from "@/components/items/Alert";
+// import SoonWidget from "@/components/items/SoonWidget";
 import Webring from "@/components/items/Webring";
 import styles from '@/styles/Home.module.css'
 
@@ -68,7 +69,10 @@ export default function Home() {
 
       <main className={styles.main}>
         <Profile />
-        <SoonWidget />
+        <Alert link="/konjer" type="info" icon="📚" >
+          I have partnered with Konjer to help bring books alive.
+        </Alert>
+        {/* <SoonWidget /> */}
         <Webring />
       </main>
     </div>
