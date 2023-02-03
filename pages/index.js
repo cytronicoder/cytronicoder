@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Profile from "@/components/Profile";
-import SoonWidget from "@/components/SoonWidget";
-import Webring from "@/components/Webring";
 import CurrentlyPlaying from "@/components/CurrentlyPlaying";
+import Projects from "@/components/Projects";
+import Webring from "@/components/Webring";
 
 import styles from '@/styles/Home.module.css'
 
@@ -71,7 +71,7 @@ export default function Home() {
       <main className={styles.main}>
         <Profile />
         <CurrentlyPlaying />
-        {/* <SoonWidget /> */}
+        <Projects />
         <Webring />
       </main>
     </div>
