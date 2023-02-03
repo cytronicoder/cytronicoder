@@ -27,6 +27,8 @@ export default function Home() {
           property="og:image"
           content="https://cytronicoder.com/og-image.png"
         />
+        <meta property="og:url" content="https://cytronicoder.com" />
+        <meta property="og:type" content="website" />
 
         <meta name="twitter:title" content="Zeyu Yao" />
         <meta
