@@ -41,3 +41,10 @@
     font-weight: bold;
     margin: 0;
 }
+
+@media (prefers-color-scheme: light) {
+    .soonText {
+        color: #ec3750;
+        background-image: none;
+    }
+}
