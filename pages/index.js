@@ -14,14 +14,14 @@ export default function Home() {
         <title>Zeyu Yao</title>
         <meta
           name="description"
-          content="My personal website, built with Next.js"
+          content="Grade 9 student and full-stack developer currently studying in Singapore"
         />
         <link rel="icon" href="/favicon.ico" />
 
         <meta property="og:title" content="Zeyu Yao" />
         <meta
           property="og:description"
-          content="My personal website, built with Next.js"
+          content="Grade 9 student and full-stack developer currently studying in Singapore"
         />
         <meta
           property="og:image"
@@ -31,7 +31,7 @@ export default function Home() {
         <meta name="twitter:title" content="Zeyu Yao" />
         <meta
           name="twitter:description"
-          content="My personal website, built with Next.js"
+          content="Grade 9 student and full-stack developer currently studying in Singapore"
         />
         <meta
           name="twitter:image"
