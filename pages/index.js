@@ -45,8 +45,8 @@ export default function Home() {
 
         <meta name="apple-mobile-web-app-title" content="Zeyu Yao" />
         <meta name="application-name" content="Zeyu Yao" />
-        <meta name="msapplication-TileColor" content="#000000" />
-        <meta name="theme-color" content="#9900ff" />
+        <meta name="msapplication-TileColor" content="#ec3750" />
+        <meta name="theme-color" content="#ec3750" />
 
         <link
           rel="apple-touch-icon"
