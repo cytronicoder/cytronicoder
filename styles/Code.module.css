@@ -1,3 +1,8 @@
+.description {
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
 .code {
     text-align: left; /* override the default */
     font-family: monospace;
@@ -15,9 +20,6 @@
     max-height: 20em;
     overflow-y: auto;
     overflow-x: auto;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
 }
 
