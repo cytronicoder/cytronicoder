@@ -1,17 +1,19 @@
 import Image from "next/image";
 import styles from "@/styles/Profile.module.css";
 
-import GitHubIcon from "@/logos/github.svg";
-import TwitterIcon from "@/logos/twitter.svg";
-import InstagramIcon from "@/logos/instagram.svg";
-import LinkedInIcon from "@/logos/linkedin.svg";
+import ProfilePic from "@/assets/profile.jpeg";
+
+import GitHubIcon from "@/assets/github.svg";
+import TwitterIcon from "@/assets/twitter.svg";
+import InstagramIcon from "@/assets/instagram.svg";
+import LinkedInIcon from "@/assets/linkedin.svg";
 
 export default function Profile() {
   return (
     <div className={styles.profile}>
       <div className={styles.profileHeader}>
         <Image
-          src="/profile.jpeg"
+          src={ProfilePic}
           alt="Profile picture"
           width={200}
           height={200}
