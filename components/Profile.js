@@ -21,6 +21,7 @@ export default function Profile() {
     "a professional procrastinator...",
     "a full-stack developer who dabbles in design and data science.",
     "a self-taught developer 2 years into the journey.",
+    "a student exploring the endless possibilities of technology and coding.",
   ];
 
   return (
