@@ -41,6 +41,18 @@
     margin-bottom: 1rem;
 }
 
+@media (max-width: 768px) {
+    .project_stats {
+        flex-direction: column;
+    }
+
+    .project_stats li {
+        margin-right: 0;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
 @media (prefers-color-scheme: light) {
     .project {
         color: #000;
