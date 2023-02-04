@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import styles from "@/styles/Spotify.module.css";
 
 import SpotifyLogo from "@/assets/spotify.svg";
+import Link from "next/link";
 
 export default function Spotify() {
   const fetcher = (url) => fetch(url).then((r) => r.json());
@@ -13,6 +14,7 @@ export default function Spotify() {
     // Fetch the song data from the Spotify API every second
     const interval = setInterval(async () => {
       fetcher("/api/spotify").then((data) => {
+        // console.log(data);
         setSong(data);
         setIsLoaded(true);
       });
@@ -35,7 +37,7 @@ export default function Spotify() {
           />
           {song.isPlaying ? (
             <div>
-              <h2 className={styles.title}>I am currently listening to <span className={styles.underline_on_hover}>{song.title}</span> by {song.artist}!</h2>
+              <h2 className={styles.title}>I am currently listening to <span className={styles.underline_on_hover}><Link href={song.songUrl} target="_blank" rel="noopener noreferrer">{song.title}</Link></span> by {song.artist}!</h2>
             </div>
           ) : (
             <h2 className={styles.title}>I am not currently listening to anything.</h2>

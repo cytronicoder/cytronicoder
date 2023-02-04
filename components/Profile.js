@@ -8,7 +8,21 @@ import TwitterIcon from "@/assets/twitter.svg";
 import InstagramIcon from "@/assets/instagram.svg";
 import LinkedInIcon from "@/assets/linkedin.svg";
 
+import Typewriter from 'typewriter-effect';
+import CurrentlyPlaying from "./CurrentlyPlaying";
+
 export default function Profile() {
+
+  // Custom text for the typewriter effect
+  const customText = [
+    "a student developer currently studying in Singapore.",
+    "a 14-year-old who loves to create things!",
+    "a web3 enthusiast - gm!",
+    "a professional procrastinator...",
+    "a full-stack developer who dabbles in design and data science.",
+    "a self-taught developer 2 years into the journey.",
+  ];
+
   return (
     <div className={styles.profile}>
       <div className={styles.profileHeader}>
@@ -82,11 +96,24 @@ export default function Profile() {
 
       <div className={styles.profileDescription}>
         <p>
-          👋 Hey! I am Peter, a student developer currently studying in Singapore.
-          I started programming at 13, and in the past year, I have <a href="https://github.com/buildspace/buildspace-faq" target="_blank" rel="noopener noreferrer">contributed documentation</a> for a startup that recently raised $10M from a16z,{" "}
-          worked with AI to create a fully functional <a href="https://github.com/cytronicoder/stock-data-visualiser" target="_blank" rel="noopener noreferrer">LSTM model</a> that can predict stock prices, and did so much more.
+          👋 Hey, I am Peter, {" "}<span className={styles.oneliner}><Typewriter
+            options={{
+              strings: customText,
+              autoStart: true,
+              loop: true,
+              cursorClassName: styles.cursor,
+            }}
+          /></span>
+        </p>
+        <p>
+          I started programming at 13, and in the past year, I have <a href="https://github.com/buildspace/buildspace-faq" target="_blank" rel="noopener noreferrer" className={styles.underline_on_hover}>contributed documentation</a> for a startup that recently raised $10M from a16z,{" "}
+          worked with AI to create a fully functional <a href="https://github.com/cytronicoder/stock-data-visualiser" target="_blank" rel="noopener noreferrer" className={styles.underline_on_hover}>LSTM model</a> that can predict stock prices, and did so much more.
           I plan to pursue further my passion for computer science to contribute to my community.
         </p>
+      </div>
+
+      <div className={styles.profileCurrentlyPlaying}>
+        <CurrentlyPlaying />
       </div>
     </div>
   );

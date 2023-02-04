@@ -12,12 +12,29 @@
 
 .profileHeader {
     display: flex;
+    margin: 20px 0;
     align-items: center;
     flex-grow: 1;
 }
 
 .profileTitle {
     margin: 20px;
+}
+
+.oneliner {
+    display: inline-block;
+}
+
+.cursor {
+    color: #ec3750;
+    font-weight: bold;
+    animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
 }
 
 .socialMedia {
@@ -30,6 +47,32 @@
 
 .socialMediaIcon:hover {
     cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.underline_on_hover {
+    display: inline-block;
+    position: relative;
+    color: #ec3750;
+}
+
+.underline_on_hover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ec3750;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.underline_on_hover:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 @media (max-width: 600px) {

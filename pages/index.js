@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Profile from "@/components/Profile";
-import CurrentlyPlaying from "@/components/CurrentlyPlaying";
 import Projects from "@/components/Projects";
 import Webring from "@/components/Webring";
 
@@ -72,7 +71,6 @@ export default function Home() {
 
       <main className={styles.main}>
         <Profile />
-        <CurrentlyPlaying />
         <Projects />
         <Webring />
       </main>
