@@ -13,11 +13,15 @@ export default function Spotify() {
   useEffect(() => {
     // Fetch the song data from the Spotify API every second
     const interval = setInterval(async () => {
-      fetcher("/api/spotify").then((data) => {
-        // console.log(data);
-        setSong(data);
-        setIsLoaded(true);
-      });
+      fetcher("/api/spotify")
+        .then((data) => {
+          // console.log(data);
+          setSong(data);
+          setIsLoaded(true);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
     }, 1000);
 
     // Clear the interval when the component unmounts
@@ -48,7 +52,6 @@ export default function Spotify() {
           <h2 className={styles.title}>Loading...</h2>
         </div>
       )}
-
     </div>
   );
 }

@@ -10,6 +10,10 @@ export default function SoonWidget() {
       .then((data) => {
         document.getElementById("quote").innerHTML = data.content;
         document.getElementById("author").innerHTML = data.author;
+      })
+      .catch((error) => {
+        document.getElementById("quote").innerHTML = "Something went wrong!";
+        document.getElementById("author").innerHTML = "Try again later";
       });
   }, []);
 
@@ -32,6 +36,10 @@ export default function SoonWidget() {
   .then((data) => {
     document.getElementById("quote").innerHTML = data.content;
     document.getElementById("author").innerHTML = data.author;
+  })
+  .catch((error) => {
+    document.getElementById("quote").innerHTML = "Something went wrong!";
+    document.getElementById("author").innerHTML = "Try again later";
   });`}
       </Code>
     </div>
