@@ -13,6 +13,8 @@ export default function Projects() {
         fetcher("/api/github")
             .then((data) => {
                 // console.log(data);
+                // Filter out the profile repository
+                data = data.filter((project) => project.name !== "cytronicoder");
                 setProjects(data);
                 setIsLoaded(true);
             })

@@ -4,41 +4,31 @@
     margin: 0 auto;
 }
 
+.profileHeader {
+    display: grid;
+    grid-template-columns: 0.75fr 0.75fr 1.25fr 1.25fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "profileImage profileTitle socialMedia achievements";
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
 .profileImage {
     width: 100px;
     height: 100px;
     border-radius: 10%;
-}
-
-.profileHeader {
-    display: flex;
-    margin: 20px 0;
-    align-items: center;
-    flex-grow: 1;
+    grid-area: profileImage;
 }
 
 .profileTitle {
-    margin: 20px;
-}
-
-.oneliner {
-    display: inline-block;
-}
-
-.cursor {
-    color: #ec3750;
-    font-weight: bold;
-    animation: blink 0.75s step-end infinite;
-}
-
-@keyframes blink {
-    50% {
-        opacity: 0;
-    }
+    text-align: center;
+    grid-area: profileTitle;
 }
 
 .socialMedia {
-    margin-right: 10px;
+    text-align: center;
+    grid-area: socialMedia;
 }
 
 .socialMediaIcon {
@@ -49,6 +39,21 @@
     cursor: pointer;
     transform: scale(1.1);
     transition: transform 0.2s;
+}
+
+.achievements {
+    grid-area: achievements;
+    padding: 10px;
+    border: 1px dashed #ec3750;
+    text-align: center;
+}
+
+.achievements p {
+    margin: 0;
+}
+
+.oneliner {
+    display: inline-block;
 }
 
 .underline_on_hover {
@@ -75,15 +80,40 @@
     transform-origin: bottom left;
 }
 
-@media (max-width: 600px) {
-    .profileHeader {
-        flex-direction: column;
-        align-items: center;
+.cursor {
+    color: #ec3750;
+    font-weight: bold;
+    animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     .socialMedia img {
         filter: invert(1);
+    }
+}
+
+@media (max-width: 800px) {
+    .profileHeader {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-areas: "profileImage" "profileTitle" "socialMedia" "achievements";
+        grid-gap: 20px;
+    }
+
+    .profileImage {
+        margin: 0 auto;
+    }
+
+    .achievements {
+        width: 50%;
+        justify-self: center;
+        text-align: center;
+        min-width: 250px;
     }
 }

@@ -13,8 +13,8 @@ import CurrentlyPlaying from "./CurrentlyPlaying";
 
 export default function Profile() {
 
-  // Custom text for the typewriter effect
-  const customText = [
+  // Custom bio for the typewriter effect
+  const customBio = [
     "a student developer currently studying in Singapore.",
     "a 14-year-old who loves to create things!",
     "a web3 enthusiast - gm!",
@@ -23,6 +23,14 @@ export default function Profile() {
     "a self-taught developer 2 years into the journey.",
     "a student exploring the endless possibilities of technology and coding.",
   ];
+
+  const customAchievements = [
+    "USACO Gold division",
+    "Distinction @ AMC 10",
+    "2x AIME qualifier",
+  ];
+
+  const achievements = customAchievements.sort(() => Math.random() - 0.5).slice(0, 2);
 
   return (
     <div className={styles.profile}>
@@ -93,13 +101,18 @@ export default function Profile() {
             />
           </a>
         </div>
+
+        <div className={styles.achievements}>
+          <p>{achievements[0]}</p>
+          <p>{achievements[1]}</p>
+        </div>
       </div>
 
       <div className={styles.profileDescription}>
         <p>
           👋 Hey, I am Peter, {" "}<span className={styles.oneliner}><Typewriter
             options={{
-              strings: customText,
+              strings: customBio,
               autoStart: true,
               loop: true,
               cursorClassName: styles.cursor,
