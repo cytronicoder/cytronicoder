@@ -18,7 +18,8 @@
 
 - **Founder of the SAIS Hack Club, aiming to provide SAIS students with an experience that inspires, educates, and develops future leaders in computer science.** We currently have 20+ members working on projects and learning new skills!
   - Check out the [State of the SAIS Hackers 2022](https://docs.google.com/document/d/1ApbrGCBwQRye_aR4DKu73Fye893xxqhUhlr90bNHnIk/edit?usp=sharing), a recap of what we have done and are working on in the future.
-- Current head of the Development and Implementation team at the [International Junior Honour Society Student Leadership Council](https://ijhscommunity.org/)
+- Current head of the outreach team at the [International Junior Honour Society Student Leadership Council](https://ijhscommunity.org/); currently working to provide support and guidance to IJHS members involved in CSPs through an online mentorship program
+  - Former head of the Development and Implementation team; organised workshops, webinars, and community events aimed at improving the welfare of IJHS fellows
   - Former head of the web development team at the SLC; spearheaded in deploying the IJHS community website to Wordpress
 
 ## 🚢 Projects I've worked on
@@ -30,7 +31,6 @@
 
 ### 🌐 Things I work with
 
-
 #### 🖌️ Design
 
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
@@ -38,6 +38,7 @@
 ![Affinity Designer](https://img.shields.io/badge/affinity%20desginer-%231B72BE.svg?style=for-the-badge&logo=affinity-designer&logoColor=white)
 
 #### 👾 Languages and frameworks
+
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![Swift](https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white)
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
@@ -50,15 +51,18 @@
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
 
 #### 📦 Package managers
+
 ![Yarn](https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white)
 ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
 
 #### ✍️ Editors
+
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![Xcode](https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=Xcode&logoColor=white)
 ![Replit](https://img.shields.io/badge/replit-667881?style=for-the-badge&logo=replit&logoColor=white)
 
 #### 🚚 Deployment
+
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
 <hr />
