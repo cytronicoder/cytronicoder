@@ -24,8 +24,16 @@
 
 ## 🚢 Projects I've worked on
 
-- Currently building [Notify](https://github.com/cytronicoder/notify), a site where you can write "notes" for other people to sign and leave a message
-- Built a Connect 4 solver during [Fundamentals of Computer Science](https://cty.jhu.edu/programs/summer/courses/fundamentals-of-computer-science-fcps); ~it got beaten by another algorithm so~ then I made [a better one](https://github.com/cytronicoder/connect-four) (takes a while to run for some initial position though)
+- Connect 4 solver during [Fundamentals of Computer Science](https://cty.jhu.edu/programs/summer/courses/fundamentals-of-computer-science-fcps); ~it got beaten by another algorithm so~ then I made [a better one](https://github.com/cytronicoder/connect-four) (takes a while to run for some initial position though)
+- Butterfly classifier using Jetson Nano during [iD Tech's AI ML course with NVIDIA](https://www.idtech.com/courses/ai-and-machine-learning-academy-with-nvidia); [code](https://github.com/cytronicoder/butterfly-classification)
+- [Stock data visualiser](https://github.com/cytronicoder/stock-data-visualiser) that uses the [Alpha Vantage API](https://www.alphavantage.co/documentation/) to get stock data
+- [Website](https://github.com/cytronicoder/singapore-taxified) that visualizse Singapore taxi locations using real-time taxi availability data from [data.gov.sg](https://data.gov.sg/)
+
+## 🌟 Projects I'm currently working on
+
+- [Notify](https://github.com/cytronicoder/notify), a site where you can write "notes" for other people to sign and leave a message
+- [detectAI](https://github.com/cytronicoder/detectai), a Google Chrome extension to pick up possible AI plagiarism by scanning the Google Doc that you are currently editing/viewing
+- A [case for the Sprig console](https://github.com/cytronicoder/sprig-gaming-controller) to make it into an actual, portable gaming controller
 
 <hr />
 
