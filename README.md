@@ -7,7 +7,7 @@
 
 ## 🏆 Achievements
 
-- Gold division in USACO
+- Platinum division in USACO!
 - Received Honor Roll of Distinction (top 1%) for the AMC 8 and Certificate of Achievement for AMC 10
 - First place in Singapore for
   - BEBRAS International Challenge on Informatics and Computational Thinking (BEBRAS, 2022)

@@ -25,7 +25,7 @@ export default function Profile() {
   ];
 
   const customAchievements = [
-    "USACO Gold division",
+    "USACO Platinum division",
     "Distinction @ AMC 10",
     "2x AIME qualifier",
   ];
