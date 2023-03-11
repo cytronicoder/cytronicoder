@@ -121,7 +121,7 @@ export default function Profile() {
           /></span>
         </p>
         <p>
-          I started programming at 13, and in the past year, I have <a href="https://github.com/buildspace/buildspace-faq" target="_blank" rel="noopener noreferrer" className={styles.underline_on_hover}>contributed documentation</a> for a startup that recently raised $10M from a16z,{" "}
+          I started programming at 13, and in the past year, I have built <a href="https://github.com/cytronicoder/singapore-taxified" target="_blank" rel="noopener noreferrer" className={styles.underline_on_hover}>a website that tracks more than 1.8k available taxis in Singapore,</a>{" "}
           worked with AI to create a fully functional <a href="https://github.com/cytronicoder/stock-data-visualiser" target="_blank" rel="noopener noreferrer" className={styles.underline_on_hover}>LSTM model</a> that can predict stock prices, and did so much more.
           I plan to pursue further my passion for computer science to contribute to my community.
         </p>
