@@ -20,37 +20,9 @@
     margin-bottom: 1rem;
 }
 
-.project_stats {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.project_stats li {
-    margin-right: 0.5rem;
-}
-
-.language {
-    font-weight: bold;
-}
-
 .project_description {
     font-size: 1.2rem;
     margin-bottom: 1rem;
-}
-
-@media (max-width: 768px) {
-    .project_stats {
-        flex-direction: column;
-    }
-
-    .project_stats li {
-        margin-right: 0;
-        font-size: 1.2rem;
-        margin-bottom: 0.5rem;
-    }
 }
 
 @media (prefers-color-scheme: light) {

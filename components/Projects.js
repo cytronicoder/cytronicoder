@@ -35,8 +35,10 @@ export default function Projects() {
                         <div className={styles.projects}>
                             {projects.length > 0 ? (
                                 projects
-                                    .sort((a, b) => b.stars - a.stars)
+                                    // Sort by last updated, then slice the first 3, then reverse the order
+                                    .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
                                     .slice(0, 3)
+                                    .reverse()
                                     .map((project) => (
                                         <Project project={project} key={project.id} />
                                     ))
