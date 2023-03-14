@@ -1,9 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useState, useEffect } from "react";
+
+// Styles
 import styles from "@/styles/Spotify.module.css";
 
+// Assets
 import SpotifyLogo from "@/assets/spotify.svg";
-import Link from "next/link";
 
 export default function Spotify() {
   const fetcher = (url) => fetch(url).then((r) => r.json());

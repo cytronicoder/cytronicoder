@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
+
+// Styles
 import styles from "@/styles/Projects.module.css";
+
+// Components
 import Project from "./Project";
 
 export default function Projects() {

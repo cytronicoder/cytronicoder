@@ -1,5 +1,7 @@
-import styles from "@/styles/Project.module.css";
 import Link from "next/link";
+
+// Styles
+import styles from "@/styles/Project.module.css";
 
 export default function Project({ project, key }) {
     return (

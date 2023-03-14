@@ -28,10 +28,10 @@ const Webring = () => {
       <Script
         src="https://webring.hackclub.com/public/embed.min.js"
         onError={() => {
-          console.log('Error');
+          console.log("Error loading webring script!");
         }}
         onLoad={() => {
-          console.log('Loaded');
+          console.log("Webring script loaded!");
         }}
       />
     </div>

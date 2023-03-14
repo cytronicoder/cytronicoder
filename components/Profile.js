@@ -1,14 +1,17 @@
 import Image from "next/image";
+import Typewriter from 'typewriter-effect';
+
+// Styles
 import styles from "@/styles/Profile.module.css";
 
+// Assets
 import ProfilePic from "@/assets/profile.jpeg";
-
 import GitHubIcon from "@/assets/github.svg";
 import TwitterIcon from "@/assets/twitter.svg";
 import InstagramIcon from "@/assets/instagram.svg";
 import LinkedInIcon from "@/assets/linkedin.svg";
 
-import Typewriter from 'typewriter-effect';
+// Components
 import CurrentlyPlaying from "./CurrentlyPlaying";
 
 export default function Profile() {

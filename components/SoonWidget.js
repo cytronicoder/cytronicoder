@@ -1,6 +1,9 @@
 import { useEffect } from "react";
+
+// Styles
 import styles from "@/styles/SoonWidget.module.css";
 
+// Components
 import Code from "./Code";
 
 export default function SoonWidget() {
