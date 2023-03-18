@@ -3,7 +3,7 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Arial&size=32&color=000000&lines=Hi+there!+I'm+Peter.+🚀" />
 </picture>
 
-👋 I'm a student developer currently studying in Singapore. I started programming at 13, and in the past year, I've [contributed documentation](https://github.com/buildspace/buildspace-faq) for a startup that recently raised $10M from a16z, built a website that [tracks more than 1.8k available taxis](https://singapore-taxified.cytronicoder.repl.co) in Singapore, and worked with AI to create a fully functional [LSTM model](https://github.com/redocinortyC/stock-data-visualiser) that can predict stock prices.
+👋 I'm a student developer currently studying in Singapore. I started programming at 13, and in the past year, I've built a website that [tracks more than 1.8k available taxis](https://singapore-taxified.cytronicoder.repl.co) in Singapore, worked with AI to create a fully functional [LSTM model](https://github.com/redocinortyC/stock-data-visualiser) that can predict stock prices, and did so much more.
 
 ## 🏆 Achievements
 
