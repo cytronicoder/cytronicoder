@@ -116,4 +116,16 @@
         text-align: center;
         min-width: 250px;
     }
+
+    .underline_on_hover {
+        display: inline;
+    }
+
+    .underline_on_hover::after {
+        display: none;
+    }
+
+    .underline_on_hover:hover {
+        text-decoration: underline;
+    }
 }
