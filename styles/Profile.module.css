@@ -56,6 +56,13 @@
     display: inline-block;
 }
 
+.widgets {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+}
+
 .underline_on_hover {
     display: inline-block;
     position: relative;
