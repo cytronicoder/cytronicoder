@@ -37,7 +37,12 @@
     display: block;
 }
 
-.button button {
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.buttons button {
     background-color: #ec3750;
     color: #fff;
     border: none;

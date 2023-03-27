@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Router from "next/router";
+import { useEffect, useState } from "react";
 import JSConfetti from "js-confetti";
 
 // Styles
-import { useState, useEffect } from "react";
 import styles from "@/styles/Birthday.module.css";
 
 export default function Birthday() {
@@ -53,8 +54,9 @@ export default function Birthday() {
                 <Image src="/dino.svg" alt="Dino" width={250} height={250} />
             </div>
 
-            <div className={styles.button}>
+            <div className={styles.buttons}>
                 <button onClick={handleClick}>Click for confetti!</button>
+                <button onClick={() => Router.push('/')}>Back to Home</button>
             </div>
         </div>
     );
