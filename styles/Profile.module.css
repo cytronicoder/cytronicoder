@@ -124,6 +124,10 @@
         min-width: 250px;
     }
 
+    .widgets {
+        grid-template-columns: 1fr;
+    }
+
     .underline_on_hover {
         display: inline;
     }
