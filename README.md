@@ -31,6 +31,13 @@
 
 ## 🌟 Projects I'm currently working on
 
+### Active 💪
+- [Cogniforge](https://cogniforge.org/) - learning for all through collaborative projects and peer-to-peer collaboration
+- [Various Hack Club shenanigans](https://scrapbook.hackclub.com/cytronicoder) in my scrapbook
+- Building Scratch for AI apps... stay tuned to [buildspace Nights and Weekends S3](https://buildspace.so/)
+
+
+### In the back burner 😩
 - [Notify](https://github.com/cytronicoder/notify), a site where you can write "notes" for other people to sign and leave a message
 - [detectAI](https://github.com/cytronicoder/detectai), a Google Chrome extension to pick up possible AI plagiarism by scanning the Google Doc that you are currently editing/viewing
 - A [case for the Sprig console](https://github.com/cytronicoder/sprig-gaming-controller) to make it into an actual, portable gaming controller
