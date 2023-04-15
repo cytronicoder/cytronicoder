@@ -34,7 +34,17 @@ export default function Projects() {
                 <div className={styles.header}>
                     <h2 className={styles.title}>Here are some of my projects:</h2>
                     {error ? (
-                        <p className={styles.description}>Error: {error.message}</p>
+                        <>
+                            <p className={styles.description}>
+                                <code>Oops! {error.message} :(</code>
+                            </p>
+                            <p className={styles.description}>
+                                Please check back later, or contact me on{" "}
+                                <a href="https://twitter.com/cytronicoder" target="_blank" rel="noreferrer">
+                                    Twitter.
+                                </a>
+                            </p>
+                        </>
                     ) : (
                         <div className={styles.projects}>
                             {projects.length > 0 ? (

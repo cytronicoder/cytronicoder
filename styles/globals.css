@@ -40,6 +40,13 @@ a:hover:after {
     box-sizing: border-box;
 }
 
+code {
+    font-family: "Fira Code", monospace;
+    background: rgba(236, 55, 80, 0.5);
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+}
+
 @media (prefers-color-scheme: dark) {
     html {
         color-scheme: dark;
