@@ -12,6 +12,7 @@ specifiers:
   react-dom: 18.2.0
   typescript: ^5.0.4
   typewriter-effect: ^2.19.0
+  vanilla-tilt: ^1.8.0
 
 dependencies:
   '@octokit/core': 4.2.0
@@ -24,6 +25,7 @@ dependencies:
   react-dom: 18.2.0_react@18.2.0
   typescript: 5.0.4
   typewriter-effect: 2.19.0_biqbaboplfbrettd7655fr4n2y
+  vanilla-tilt: 1.8.0
 
 devDependencies:
   dotenv: 16.0.3
@@ -2244,6 +2246,10 @@ packages:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
     dependencies:
       punycode: 2.3.0
+    dev: false
+
+  /vanilla-tilt/1.8.0:
+    resolution: {integrity: sha512-wVCHyyfRuiRdKhDTNxKPb60lkagmywDSqLgFETEr71Sm646AvGxuf/14Kx9A8FaISyYvMoKQHk6FTqt+YLGhEw==}
     dev: false
 
   /webidl-conversions/3.0.1:
