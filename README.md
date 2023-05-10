@@ -7,12 +7,13 @@
 
 ## 🏆 Achievements
 
-- Platinum division in USACO!
+- Platinum division in USACO
 - Received Honor Roll of Distinction (top 1%) for the AMC 8 and Certificate of Achievement for AMC 10
 - First place in Singapore for
   - BEBRAS International Challenge on Informatics and Computational Thinking (BEBRAS, 2022)
   - Singapore Math Global Assessments Final (SINGA, 2022)
   - Design Thinking with Robotics and Computational Thinking International Competition Finals (DrCT, 2021)
+  - Singapore and Asian Schools Math Olympiad (SASMO, 2023)
 
 ## 📚 Experience
 
@@ -27,17 +28,18 @@
 - Connect 4 solver during [Fundamentals of Computer Science](https://cty.jhu.edu/programs/summer/courses/fundamentals-of-computer-science-fcps); ~it got beaten by another algorithm so~ then I made [a better one](https://github.com/cytronicoder/connect-four) (takes a while to run for some initial position though)
 - Butterfly classifier using Jetson Nano during [iD Tech's AI ML course with NVIDIA](https://www.idtech.com/courses/ai-and-machine-learning-academy-with-nvidia); [code](https://github.com/cytronicoder/butterfly-classification)
 - [Stock data visualiser](https://github.com/cytronicoder/stock-data-visualiser) that uses the [Alpha Vantage API](https://www.alphavantage.co/documentation/) to get stock data
-- [Website](https://github.com/cytronicoder/singapore-taxified) that visualise Singapore taxi locations using real-time taxi availability data from [data.gov.sg](https://data.gov.sg/)
+- [Website](https://github.com/cytronicoder/singapore-taxified) that visualise Singapore taxi locations using real-time taxi availability data from [data.gov.sg](https://data.gov.sg/) - **I'm rebooting this project and making it better! Check out the [new branch](https://github.com/cytroncioder/singapore-taxified/tree/new)**
 
 ## 🌟 Projects I'm currently working on
 
 ### Active 💪
+
 - [Cogniforge](https://cogniforge.org/) - learning for all through collaborative projects and peer-to-peer collaboration
 - [Various Hack Club shenanigans](https://scrapbook.hackclub.com/cytronicoder) in my scrapbook
 - Building Scratch for AI apps... stay tuned to [buildspace Nights and Weekends S3](https://buildspace.so/)
 
-
 ### In the back burner 😩
+
 - [Notify](https://github.com/cytronicoder/notify), a site where you can write "notes" for other people to sign and leave a message
 - [detectAI](https://github.com/cytronicoder/detectai), a Google Chrome extension to pick up possible AI plagiarism by scanning the Google Doc that you are currently editing/viewing
 - A [case for the Sprig console](https://github.com/cytronicoder/sprig-gaming-controller) to make it into an actual, portable gaming controller
