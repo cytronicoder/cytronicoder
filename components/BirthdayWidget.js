@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Styles
-import styles from "@/styles/BirthdayWidget.module.css";
+import styles from "@/styles/DefaultWidget.module.css";
 
 // Assets
 import CakeLogo from "@/assets/cake.svg";

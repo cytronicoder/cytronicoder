@@ -13,6 +13,7 @@ import LinkedInIcon from "@/assets/linkedin.svg";
 
 // Components
 import CurrentlyPlaying from "./CurrentlyPlaying";
+import BlogWidget from "./BlogWidget";
 // import BirthdayWiget from "@/components/BirthdayWidget";
 
 export default function Profile() {
@@ -131,10 +132,11 @@ export default function Profile() {
         </p>
       </div>
 
-      {/* <div className={styles.widgets}> */}
+      <div className={styles.widgets}>
+        <BlogWidget />
         <CurrentlyPlaying />
         {/* <BirthdayWiget /> */}
-      {/* </div> */}
+      </div>
     </div>
   );
 }

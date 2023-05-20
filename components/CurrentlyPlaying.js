@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 
 // Styles
-import styles from "@/styles/CurrentlyPlaying.module.css";
+import styles from "@/styles/DefaultWidget.module.css";
 
 // Assets
 import SpotifyLogo from "@/assets/spotify.svg";
