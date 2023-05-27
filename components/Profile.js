@@ -21,7 +21,7 @@ export default function Profile() {
   // Custom bio for the typewriter effect
   const customBio = [
     "a student developer currently studying in Singapore.",
-    "a 14-year-old who loves to create things!",
+    "a 15-year-old who loves to create things!",
     "a web3 enthusiast - gm!",
     "a professional procrastinator...",
     "a full-stack developer who dabbles in design and data science.",
