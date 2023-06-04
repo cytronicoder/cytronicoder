@@ -7,6 +7,7 @@ import styles from '@/styles/Home.module.css'
 import Profile from "@/components/Profile";
 import Projects from "@/components/Projects";
 import Webring from "@/components/Webring";
+import Soon from "@/components/Soon";
 
 export default function Home() {
 
@@ -74,7 +75,8 @@ export default function Home() {
 
       <main className={styles.main}>
         <Profile />
-        <Projects />
+        {/* <Projects /> */}
+        <Soon />
         <Webring />
       </main>
     </div>

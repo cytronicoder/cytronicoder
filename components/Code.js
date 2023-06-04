@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import styles from "@/styles/Code.module.css";
 
 export default function Code({ children }) {
