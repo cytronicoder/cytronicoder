@@ -11,17 +11,17 @@
   "dependencies": {
     "@octokit/core": "^4.2.1",
     "@vercel/analytics": "^1.0.1",
-    "eslint": "8.41.0",
+    "eslint": "8.42.0",
     "eslint-config-next": "13.4.4",
     "js-confetti": "^0.11.0",
     "next": "13.4.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "^5.0.4",
-    "typewriter-effect": "^2.19.0",
+    "typescript": "^5.1.3",
+    "typewriter-effect": "^2.20.1",
     "vanilla-tilt": "^1.8.0"
   },
   "devDependencies": {
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.1.3"
   }
 }
