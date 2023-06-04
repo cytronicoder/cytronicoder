@@ -20,9 +20,7 @@ export default function BirthdayWidget() {
             className={styles.logo}
           />
           <div className={styles.header}>
-            <h2 className={styles.title}>
-              My birthday is coming up!
-            </h2>
+            <h2 className={styles.title}>My birthday is coming up!</h2>
           </div>
         </div>
       </Link>

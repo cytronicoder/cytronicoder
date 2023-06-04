@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 // Styles
-import styles from '@/styles/Home.module.css'
+import styles from "@/styles/Home.module.css";
 
 // Components
 import Profile from "@/components/Profile";
@@ -10,7 +10,6 @@ import Webring from "@/components/Webring";
 import Soon from "@/components/Soon";
 
 export default function Home() {
-
   return (
     <div className={styles.container}>
       <Head>

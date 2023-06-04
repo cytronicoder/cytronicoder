@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Typewriter from 'typewriter-effect';
+import Typewriter from "typewriter-effect";
 
 // Styles
 import styles from "@/styles/Profile.module.css";
@@ -17,7 +17,6 @@ import BlogWidget from "./BlogWidget";
 // import BirthdayWiget from "@/components/BirthdayWidget";
 
 export default function Profile() {
-
   // Custom bio for the typewriter effect
   const customBio = [
     "a student developer currently studying in Singapore.",
@@ -36,7 +35,9 @@ export default function Profile() {
     "2x AIME qualifier",
   ];
 
-  const achievements = customAchievements.sort(() => Math.random() - 0.5).slice(0, 2);
+  const achievements = customAchievements
+    .sort(() => Math.random() - 0.5)
+    .slice(0, 2);
 
   return (
     <div className={styles.profile}>
@@ -116,19 +117,39 @@ export default function Profile() {
 
       <div className={styles.profileDescription}>
         <p>
-          👋 Hey, I am Peter, {" "}<span className={styles.oneliner}><Typewriter
-            options={{
-              strings: customBio,
-              autoStart: true,
-              loop: true,
-              cursorClassName: styles.cursor,
-            }}
-          /></span>
+          👋 Hey, I am Peter,{" "}
+          <span className={styles.oneliner}>
+            <Typewriter
+              options={{
+                strings: customBio,
+                autoStart: true,
+                loop: true,
+                cursorClassName: styles.cursor,
+              }}
+            />
+          </span>
         </p>
         <p>
-          I started programming at 13, and in the past year, I have built <a href="https://github.com/cytronicoder/singapore-taxified" target="_blank" rel="noopener noreferrer" className={styles.underline_on_hover}>a website that tracks more than 1.8k available taxis in Singapore,</a>{" "}
-          worked with AI to create a fully functional <a href="https://github.com/cytronicoder/stock-data-visualiser" target="_blank" rel="noopener noreferrer" className={styles.underline_on_hover}>LSTM model</a> that can predict stock prices, and did so much more.
-          I plan to pursue further my passion for computer science to contribute to my community.
+          I started programming at 13, and in the past year, I have built{" "}
+          <a
+            href="https://github.com/cytronicoder/singapore-taxified"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.underline_on_hover}
+          >
+            a website that tracks more than 1.8k available taxis in Singapore,
+          </a>{" "}
+          worked with AI to create a fully functional{" "}
+          <a
+            href="https://github.com/cytronicoder/stock-data-visualiser"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.underline_on_hover}
+          >
+            LSTM model
+          </a>{" "}
+          that can predict stock prices, and did so much more. I plan to pursue
+          further my passion for computer science to contribute to my community.
         </p>
       </div>
 
