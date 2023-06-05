@@ -18,7 +18,7 @@
 ## 📚 Experience
 
 - **Founder of the SAIS Hack Club, aiming to provide SAIS students with an experience that inspires, educates, and develops future leaders in computer science.** We currently have 20+ members working on projects and learning new skills!
-  - Check out the [State of the SAIS Hackers 2022](https://docs.google.com/document/d/1ApbrGCBwQRye_aR4DKu73Fye893xxqhUhlr90bNHnIk/edit?usp=sharing), a recap of what we have done and are working on in the future.
+  - Check out the [State of the SAIS Hackers 2023: Part 1](https://docs.google.com/document/d/1VTuj2GIt9UPeOAZONyhV7yVubRu0MY6VWwqYqyewTFg/edit?usp=sharing), a recap of what we have done and are working on in the future.
 - Current head of the outreach team at the [International Junior Honour Society Student Leadership Council](https://ijhscommunity.org/); currently working to provide support and guidance to IJHS members involved in CSPs through an online mentorship program
   - Former head of the Development and Implementation team; organised workshops, webinars, and community events aimed at improving the welfare of IJHS fellows
   - Former head of the web development team at the SLC; spearheaded in deploying the IJHS community website to Wordpress
