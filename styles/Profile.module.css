@@ -19,6 +19,14 @@
   height: 100px;
   border-radius: 10%;
   grid-area: profileImage;
+  box-shadow: 0 0 25px #a633d6;
+}
+
+.profileImage:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0 0 50px #a633d6;
+  transition: transform 0.25s, box-shadow 0.5s;
 }
 
 .profileTitle {

@@ -49,7 +49,6 @@ export default function Profile() {
       customAchievements.sort(() => Math.random() - 0.5).slice(0, 2)
     );
 
-    // Fetch the profile image URL from the API every 15 minutes and update the state
     const fetchProfileImage = async () => {
       try {
         const response = await fetch("/api/profileImage");
@@ -61,21 +60,27 @@ export default function Profile() {
     };
 
     fetchProfileImage(); // Fetch the image on component mount
-    const intervalId = setInterval(fetchProfileImage, 15 * 60 * 1000); // Set up the interval
+    const intervalId = setInterval(fetchProfileImage, 1000);
 
-    return () => clearInterval(intervalId); // Clear the interval on component unmount
+    return () => clearInterval(intervalId);
   }, []);
 
   return (
     <div className={styles.profile}>
       <div className={styles.profileHeader}>
-        <Image
-          src={profileImageUrl}
-          alt="Profile picture"
-          width={200}
-          height={200}
-          className={styles.profileImage}
-        />
+        <a
+          href="https://slack.cytronicoder.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src={profileImageUrl}
+            alt="Profile picture"
+            width={200}
+            height={200}
+            className={styles.profileImage}
+          />
+        </a>
 
         <div className={styles.profileTitle}>
           <h1 className={styles.title}>Zeyu Yao</h1>
