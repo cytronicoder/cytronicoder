@@ -13,7 +13,7 @@ export default function Project({ project, key }) {
     >
       <div className={styles.project}>
         <h3 className={styles.project_title}>{project.name}</h3>
-        <span className={styles.language}>{project.language}</span>
+        <span className={styles.language}>{project.language || "N/A"} | {project.stars} ⭐️</span>
         <p className={styles.project_description}>{project.description}</p>
       </div>
     </Link>

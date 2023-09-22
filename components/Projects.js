@@ -54,11 +54,12 @@ export default function Projects() {
               {projects.length > 0 ? (
                 projects
                   // Sort by last updated, then slice the first 3, then reverse the order
-                  .sort(
-                    (a, b) => new Date(b.updated_at) - new Date(a.updated_at)
-                  )
+                  // .sort(
+                  //   (a, b) => new Date(b.updated_at) - new Date(a.updated_at)
+                  // ).reverse()
+                  // Sort randomly
+                  .sort(() => Math.random() - 0.5)
                   .slice(0, 3)
-                  .reverse()
                   .map((project) => (
                     <Project project={project} key={project.id} />
                   ))

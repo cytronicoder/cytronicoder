@@ -74,8 +74,8 @@ export default function Home() {
 
       <main className={styles.main}>
         <Profile />
-        {/* <Projects /> */}
-        <Soon />
+        <Projects />
+        {/* <Soon /> */}
         <Webring />
       </main>
     </div>

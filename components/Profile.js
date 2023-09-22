@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Typewriter from "typewriter-effect";
 
@@ -25,15 +25,17 @@ const customBio = [
   "a full-stack developer who dabbles in design and data science.",
   "a self-taught developer 2 years into the journey.",
   "a student exploring the endless possibilities of technology and coding.",
-  "certified USACO Platinum divisioner on that C++ grind.",
+  "a certified USACO Platinum divisioner on that C++ grind.",
   "a researcher in the field of bioinformatics.",
   "a guy who presents at events way too much.",
 ];
 
 const customAchievements = [
-  "USACO Platinum division",
-  "Distinction @ AMC 10",
-  "2x AIME qualifier",
+  "USACO Platinum Division",
+  "2x AIME Qualifier",
+  "1st SEA-AIME Rank",
+  "USAMO Qualifier",
+  "AMC10 Distinction",
 ];
 
 export default function Profile() {
@@ -42,7 +44,9 @@ export default function Profile() {
 
   useEffect(() => {
     setBio(customBio.sort(() => Math.random() - 0.5));
-    setAchievements(customAchievements.sort(() => Math.random() - 0.5).slice(0, 2));
+    setAchievements(
+      customAchievements.sort(() => Math.random() - 0.5).slice(0, 2)
+    );
   }, []);
 
   return (
@@ -136,16 +140,27 @@ export default function Profile() {
           </div>
         </div>
         <p>
-          I started programming at 13, and in the past year, I have built{" "}
+          Since I was 13 years old, my passion for computer science led me to
+          develop many projects, like a{" "}
           <a
             href="https://github.com/cytronicoder/singapore-taxified"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.underline_on_hover}
           >
-            a website that tracks more than 1.8k available taxis in Singapore,
+            website that tracks over 1.8k taxis in Singapore.
           </a>{" "}
-          worked with AI to create a fully functional{" "}
+          I also founded the{" "}
+          <a
+            href="https://saishack.club/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.underline_on_hover}
+          >
+            SAIS Hack Club,
+          </a>{" "}
+          where I lead workshops on computer science topics at my school. Last
+          year, I immersed myself in AI and constructed an{" "}
           <a
             href="https://github.com/cytronicoder/stock-data-visualiser"
             target="_blank"
@@ -154,8 +169,21 @@ export default function Profile() {
           >
             LSTM model
           </a>{" "}
-          that can predict stock prices, and did so much more. I plan to pursue
-          further my passion for computer science to contribute to my community.
+          capable of predicting stock prices and an{" "}
+          <a
+            href="https://github.com/cytronicoder/stock-data-visualiser"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.underline_on_hover}
+          >
+            AI-assisted aircraft taxiing system.
+          </a>{" "}
+        </p>
+        <p>
+          In my free time, you can find me immersed in (or ranting about) a good
+          book, vibing to my favorite music, engaging in my swim team, or simply
+          socializing with friends. I plan to pursue further my passion for
+          computer science to contribute to my community.
         </p>
       </div>
 
