@@ -1,148 +1,148 @@
 .profile {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .profileHeader {
-    display: grid;
-    grid-template-columns: 0.75fr 0.75fr 1.25fr 1.25fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "profileImage profileTitle socialMedia achievements";
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
+  display: grid;
+  grid-template-columns: 0.75fr 0.75fr 1.25fr 1.25fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "profileImage profileTitle socialMedia achievements";
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
 }
 
 .profileImage {
-    width: 100px;
-    height: 100px;
-    border-radius: 10%;
-    grid-area: profileImage;
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+  grid-area: profileImage;
 }
 
 .profileTitle {
-    text-align: center;
-    grid-area: profileTitle;
+  text-align: center;
+  grid-area: profileTitle;
 }
 
 .socialMedia {
-    text-align: center;
-    grid-area: socialMedia;
+  text-align: center;
+  grid-area: socialMedia;
 }
 
 .socialMediaIcon {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 .socialMediaIcon:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: transform 0.2s;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.2s;
 }
 
 .achievements {
-    grid-area: achievements;
-    padding: 10px;
-    border: 1px dashed #a633d6;
-    text-align: center;
+  grid-area: achievements;
+  padding: 10px;
+  border: 1px dashed #a633d6;
+  text-align: center;
 }
 
 .achievements p {
-    margin: 0;
+  margin: 0;
 }
 
 .staticText {
-    line-height: 1.5;
-    font-size: 1.25rem;
+  line-height: 1.5;
+  font-size: 1.25rem;
 }
 
 .oneliner {
-    display: inline-block;
+  display: inline-block;
 }
 
 .widgets {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  justify-content: center;
 }
 
 .underline_on_hover {
-    display: inline-block;
-    position: relative;
-    color: #a633d6;
-    cursor: pointer;
+  display: inline-block;
+  position: relative;
+  color: #a633d6;
+  cursor: pointer;
 }
 
 .underline_on_hover::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #a633d6;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #a633d6;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
 
 .underline_on_hover:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .cursor {
-    color: #a633d6;
-    font-weight: bold;
-    animation: blink 0.75s step-end infinite;
+  color: #a633d6;
+  font-weight: bold;
+  animation: blink 0.75s step-end infinite;
 }
 
 @keyframes blink {
-    50% {
-        opacity: 0;
-    }
+  50% {
+    opacity: 0;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
-    .socialMedia img {
-        filter: invert(1);
-    }
+  .socialMedia img {
+    filter: invert(1);
+  }
 }
 
 @media (max-width: 800px) {
-    .profileHeader {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1.5fr 0.5fr 0.5fr 0.5fr;
-        grid-template-areas: "profileImage" "profileTitle" "socialMedia" "achievements";
-        grid-gap: 20px;
-    }
+  .profileHeader {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: "profileImage" "profileTitle" "socialMedia" "achievements";
+    grid-gap: 20px;
+  }
 
-    .profileImage {
-        margin: 0 auto;
-    }
+  .profileImage {
+    margin: 0 auto;
+  }
 
-    .achievements {
-        width: 50%;
-        justify-self: center;
-        text-align: center;
-        min-width: 250px;
-    }
+  .achievements {
+    width: 50%;
+    justify-self: center;
+    text-align: center;
+    min-width: 250px;
+  }
 
-    .widgets {
-        grid-template-columns: 1fr;
-    }
+  .widgets {
+    grid-template-columns: 1fr;
+  }
 
-    .underline_on_hover {
-        display: inline;
-    }
+  .underline_on_hover {
+    display: inline;
+  }
 
-    .underline_on_hover::after {
-        display: none;
-    }
+  .underline_on_hover::after {
+    display: none;
+  }
 
-    .underline_on_hover:hover {
-        text-decoration: underline;
-    }
+  .underline_on_hover:hover {
+    text-decoration: underline;
+  }
 }

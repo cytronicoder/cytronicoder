@@ -1,66 +1,66 @@
 .container {
-    margin: 0 auto;
-    padding: 0 50px;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+  margin: 0 auto;
+  padding: 0 50px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .title {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
 .seconds {
-    color: #a633d6;
+  color: #a633d6;
 }
 
 .minutes {
-    color: #f16a7d;
+  color: #f16a7d;
 }
 
 .hours {
-    color: #f594a1;
+  color: #f594a1;
 }
 
 .days {
-    color: #f9bec6;
+  color: #f9bec6;
 }
 
 .dinoImage {
-    display: block;
+  display: block;
 }
 
 .buttons {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .buttons button {
-    background-color: #a633d6;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
+  background-color: #a633d6;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 @media (prefers-color-scheme: dark) {
-    .dinoImage {
-        filter: invert(1);
-    }
+  .dinoImage {
+    filter: invert(1);
+  }
 }
 
 @media (max-width: 768px) {
-    .dinoImage {
-        display: none;
-    }
+  .dinoImage {
+    display: none;
+  }
 }

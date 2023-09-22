@@ -41,19 +41,36 @@ const customAchievements = [
 export default function Profile() {
   const [bio, setBio] = useState([]);
   const [achievements, setAchievements] = useState([]);
+  const [profileImageUrl, setProfileImageUrl] = useState(ProfilePic);
 
   useEffect(() => {
     setBio(customBio.sort(() => Math.random() - 0.5));
     setAchievements(
       customAchievements.sort(() => Math.random() - 0.5).slice(0, 2)
     );
+
+    // Fetch the profile image URL from the API every 15 minutes and update the state
+    const fetchProfileImage = async () => {
+      try {
+        const response = await fetch("/api/profileImage");
+        const data = await response.json();
+        setProfileImageUrl(data.imageUrl);
+      } catch (error) {
+        console.error("Error fetching profile image:", error);
+      }
+    };
+
+    fetchProfileImage(); // Fetch the image on component mount
+    const intervalId = setInterval(fetchProfileImage, 15 * 60 * 1000); // Set up the interval
+
+    return () => clearInterval(intervalId); // Clear the interval on component unmount
   }, []);
 
   return (
     <div className={styles.profile}>
       <div className={styles.profileHeader}>
         <Image
-          src={ProfilePic}
+          src={profileImageUrl}
           alt="Profile picture"
           width={200}
           height={200}

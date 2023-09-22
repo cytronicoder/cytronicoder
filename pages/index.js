@@ -6,8 +6,8 @@ import styles from "@/styles/Home.module.css";
 // Components
 import Profile from "@/components/Profile";
 import Projects from "@/components/Projects";
-import Webring from "@/components/Webring";
-import Soon from "@/components/Soon";
+// import Webring from "@/components/Webring";
+// import Soon from "@/components/Soon";
 
 export default function Home() {
   return (

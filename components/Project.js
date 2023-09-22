@@ -13,7 +13,9 @@ export default function Project({ project, key }) {
     >
       <div className={styles.project}>
         <h3 className={styles.project_title}>{project.name}</h3>
-        <span className={styles.language}>Built w/ {project.language || "unknown language"}</span>
+        <span className={styles.language}>
+          Built w/ {project.language || "unknown language"}
+        </span>
         <p className={styles.project_description}>{project.description}</p>
       </div>
     </Link>
