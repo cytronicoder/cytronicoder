@@ -140,15 +140,32 @@ export default function Profile() {
           </div>
         </div>
         <p>
-          Since I was 13 years old, my passion for computer science led me to
-          develop many projects, like a{" "}
+          I built a{" "}
           <a
             href="https://github.com/cytronicoder/singapore-taxified"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.underline_on_hover}
           >
-            website that tracks over 1.8k taxis in Singapore.
+            website that tracks 1.8k+ taxis
+          </a>{" "}
+          in Singapore, a{" "}
+          <a
+            href="https://github.com/cytronicoder/stock-data-visualiser"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.underline_on_hover}
+          >
+            stock price predictor,
+          </a>{" "}
+          and an{" "}
+          <a
+            href="https://github.com/cytronicoder/stock-data-visualiser"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.underline_on_hover}
+          >
+            AI-assisted aircraft taxiing system.
           </a>{" "}
           I also founded the{" "}
           <a
@@ -159,31 +176,22 @@ export default function Profile() {
           >
             SAIS Hack Club,
           </a>{" "}
-          where I lead workshops on computer science topics at my school. Last
-          year, I immersed myself in AI and constructed an{" "}
-          <a
-            href="https://github.com/cytronicoder/stock-data-visualiser"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.underline_on_hover}
-          >
-            LSTM model
-          </a>{" "}
-          capable of predicting stock prices and an{" "}
-          <a
-            href="https://github.com/cytronicoder/stock-data-visualiser"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.underline_on_hover}
-          >
-            AI-assisted aircraft taxiing system.
-          </a>{" "}
+          where I lead workshops on computer science topics at my school.
         </p>
         <p>
           In my free time, you can find me immersed in (or ranting about) a good
-          book, vibing to my favorite music, engaging in my swim team, or simply
-          socializing with friends. I plan to pursue further my passion for
-          computer science to contribute to my community.
+          book, vibing to my{" "}
+          <a
+            href="https://open.spotify.com/playlist/0u39epTT1qhLd2COWU1vtC"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.underline_on_hover}
+          >
+            favorite music,
+          </a>{" "}
+          engaging in my swim team, or simply socializing with friends. I plan
+          to pursue further my passion for computer science to contribute to my
+          community.
         </p>
       </div>
 
