@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Zeyu Yao</title>
+        <title>Zeyu Yao | Portfolio</title>
         <meta
           name="description"
           content="Grade 9 student and full-stack developer currently studying in Singapore"

@@ -22,15 +22,15 @@
 }
 
 .minutes {
-  color: #f16a7d;
+  color: #33a6d6;
 }
 
 .hours {
-  color: #f594a1;
+  color: #d6a633;
 }
 
 .days {
-  color: #f9bec6;
+  color: #33d6a6;
 }
 
 .dinoImage {
@@ -43,14 +43,21 @@
 }
 
 .buttons button {
-  background-color: #a633d6;
+  background-color: transparent;
   color: #fff;
-  border: none;
+  border: 2px solid #fff;
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
 }
 
 @media (prefers-color-scheme: dark) {
