@@ -49,8 +49,8 @@ export default function Home() {
 
         <meta name="apple-mobile-web-app-title" content="Zeyu Yao" />
         <meta name="application-name" content="Zeyu Yao" />
-        <meta name="msapplication-TileColor" content="#ec3750" />
-        <meta name="theme-color" content="#ec3750" />
+        <meta name="msapplication-TileColor" content="#a633d6" />
+        <meta name="theme-color" content="#a633d6" />
 
         <link
           rel="apple-touch-icon"
@@ -76,7 +76,7 @@ export default function Home() {
         <Profile />
         <Projects />
         {/* <Soon /> */}
-        <Webring />
+        {/* <Webring /> */}
       </main>
     </div>
   );

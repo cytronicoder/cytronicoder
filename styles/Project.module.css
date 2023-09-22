@@ -8,8 +8,8 @@
 
 .project:hover {
     background-color: #fff;
-    color: #ec3750;
-    box-shadow: 0 0 10px 0 #ec3750;
+    color: #a633d6;
+    box-shadow: 0 0 10px 0 #a633d6;
     transform: translate(-5px, -5px);
     transition: all 0.2s ease-in-out;
 }
@@ -32,7 +32,7 @@
     }
 
     .project:hover {
-        background-color: #ec3750;
+        background-color: #a633d6;
         color: #fff;
         box-shadow: 0 0 10px 0 #fff;
     }

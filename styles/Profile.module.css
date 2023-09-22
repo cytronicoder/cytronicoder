@@ -44,7 +44,7 @@
 .achievements {
     grid-area: achievements;
     padding: 10px;
-    border: 1px dashed #ec3750;
+    border: 1px dashed #a633d6;
     text-align: center;
 }
 
@@ -71,7 +71,7 @@
 .underline_on_hover {
     display: inline-block;
     position: relative;
-    color: #ec3750;
+    color: #a633d6;
     cursor: pointer;
 }
 
@@ -83,7 +83,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #ec3750;
+    background-color: #a633d6;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -94,7 +94,7 @@
 }
 
 .cursor {
-    color: #ec3750;
+    color: #a633d6;
     font-weight: bold;
     animation: blink 0.75s step-end infinite;
 }
