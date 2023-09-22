@@ -49,7 +49,9 @@ export default function Spotify() {
           )}
         </Widget>
       ) : (
-        <>Loading...</>
+        <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+          Loading...
+        </div>
       )}
     </>
   );

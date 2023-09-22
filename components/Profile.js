@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import Image from "next/image";
 import Typewriter from "typewriter-effect";
 
@@ -16,28 +17,33 @@ import CurrentlyPlaying from "./CurrentlyPlaying";
 import BlogWidget from "./BlogWidget";
 // import BirthdayWiget from "@/components/BirthdayWidget";
 
+const customBio = [
+  "a student developer currently studying in Singapore.",
+  "a 15-year-old who loves to create.",
+  "a web3 enthusiast.",
+  "a professional procrastinator.",
+  "a full-stack developer who dabbles in design and data science.",
+  "a self-taught developer 2 years into the journey.",
+  "a student exploring the endless possibilities of technology and coding.",
+  "certified USACO Platinum divisioner on that C++ grind.",
+  "a researcher in the field of bioinformatics.",
+  "a guy who presents at events way too much.",
+];
+
+const customAchievements = [
+  "USACO Platinum division",
+  "Distinction @ AMC 10",
+  "2x AIME qualifier",
+];
+
 export default function Profile() {
-  // Custom bio for the typewriter effect
-  const customBio = [
-    "a student developer currently studying in Singapore.",
-    "a 15-year-old who loves to create things!",
-    "a web3 enthusiast - gm!",
-    "a professional procrastinator...",
-    "a full-stack developer who dabbles in design and data science.",
-    "a self-taught developer 2 years into the journey.",
-    "a student exploring the endless possibilities of technology and coding.",
-    "certified USACO Platinum boi on that C++ grind.",
-  ];
+  const [bio, setBio] = useState([]);
+  const [achievements, setAchievements] = useState([]);
 
-  const customAchievements = [
-    "USACO Platinum division",
-    "Distinction @ AMC 10",
-    "2x AIME qualifier",
-  ];
-
-  const achievements = customAchievements
-    .sort(() => Math.random() - 0.5)
-    .slice(0, 2);
+  useEffect(() => {
+    setBio(customBio.sort(() => Math.random() - 0.5));
+    setAchievements(customAchievements.sort(() => Math.random() - 0.5).slice(0, 2));
+  }, []);
 
   return (
     <div className={styles.profile}>
@@ -116,19 +122,19 @@ export default function Profile() {
       </div>
 
       <div className={styles.profileDescription}>
-        <p>
+        <div className={styles.staticText}>
           👋 Hey, I am Peter,{" "}
-          <span className={styles.oneliner}>
+          <div className={styles.oneliner}>
             <Typewriter
               options={{
-                strings: customBio,
+                strings: bio,
                 autoStart: true,
                 loop: true,
                 cursorClassName: styles.cursor,
               }}
             />
-          </span>
-        </p>
+          </div>
+        </div>
         <p>
           I started programming at 13, and in the past year, I have built{" "}
           <a

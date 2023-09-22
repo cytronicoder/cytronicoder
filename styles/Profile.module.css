@@ -52,6 +52,11 @@
     margin: 0;
 }
 
+.staticText {
+    line-height: 1.5;
+    font-size: 1.25rem;
+}
+
 .oneliner {
     display: inline-block;
 }
@@ -67,6 +72,7 @@
     display: inline-block;
     position: relative;
     color: #ec3750;
+    cursor: pointer;
 }
 
 .underline_on_hover::after {
