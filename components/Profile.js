@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Typewriter from "typewriter-effect";
 
@@ -25,36 +25,62 @@ const customBio = [
   "a full-stack developer who dabbles in design and data science.",
   "a self-taught developer 2 years into the journey.",
   "a student exploring the endless possibilities of technology and coding.",
-  "certified USACO Platinum divisioner on that C++ grind.",
+  "a certified USACO Platinum divisioner on that C++ grind.",
   "a researcher in the field of bioinformatics.",
   "a guy who presents at events way too much.",
 ];
 
 const customAchievements = [
-  "USACO Platinum division",
-  "Distinction @ AMC 10",
-  "2x AIME qualifier",
+  "USACO Platinum Division",
+  "2x AIME Qualifier",
+  "1st SEA-AIME Rank",
+  "USAMO Qualifier",
+  "AMC10 Distinction",
 ];
 
 export default function Profile() {
   const [bio, setBio] = useState([]);
   const [achievements, setAchievements] = useState([]);
+  const [profileImageUrl, setProfileImageUrl] = useState(ProfilePic);
 
   useEffect(() => {
     setBio(customBio.sort(() => Math.random() - 0.5));
-    setAchievements(customAchievements.sort(() => Math.random() - 0.5).slice(0, 2));
+    setAchievements(
+      customAchievements.sort(() => Math.random() - 0.5).slice(0, 2)
+    );
+
+    const fetchProfileImage = async () => {
+      try {
+        const response = await fetch("/api/profileImage");
+        const data = await response.json();
+        setProfileImageUrl(data.imageUrl);
+      } catch (error) {
+        console.error("Error fetching profile image:", error);
+      }
+    };
+
+    fetchProfileImage(); // Fetch the image on component mount
+    const intervalId = setInterval(fetchProfileImage, 1000);
+
+    return () => clearInterval(intervalId);
   }, []);
 
   return (
     <div className={styles.profile}>
       <div className={styles.profileHeader}>
-        <Image
-          src={ProfilePic}
-          alt="Profile picture"
-          width={200}
-          height={200}
-          className={styles.profileImage}
-        />
+        <a
+          href="https://slack.cytronicoder.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src={profileImageUrl}
+            alt="Profile picture"
+            width={200}
+            height={200}
+            className={styles.profileImage}
+          />
+        </a>
 
         <div className={styles.profileTitle}>
           <h1 className={styles.title}>Zeyu Yao</h1>
@@ -136,26 +162,58 @@ export default function Profile() {
           </div>
         </div>
         <p>
-          I started programming at 13, and in the past year, I have built{" "}
+          I built a{" "}
           <a
             href="https://github.com/cytronicoder/singapore-taxified"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.underline_on_hover}
           >
-            a website that tracks more than 1.8k available taxis in Singapore,
+            website that tracks 1.8k+ taxis
           </a>{" "}
-          worked with AI to create a fully functional{" "}
+          in Singapore, a{" "}
           <a
             href="https://github.com/cytronicoder/stock-data-visualiser"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.underline_on_hover}
           >
-            LSTM model
+            stock price predictor,
           </a>{" "}
-          that can predict stock prices, and did so much more. I plan to pursue
-          further my passion for computer science to contribute to my community.
+          and an{" "}
+          <a
+            href="https://github.com/cytronicoder/stock-data-visualiser"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.underline_on_hover}
+          >
+            AI-assisted aircraft taxiing system.
+          </a>{" "}
+          I also founded the{" "}
+          <a
+            href="https://saishack.club/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.underline_on_hover}
+          >
+            SAIS Hack Club,
+          </a>{" "}
+          where I lead workshops on computer science topics at my school.
+        </p>
+        <p>
+          In my free time, you can find me immersed in (or ranting about) a good
+          book, vibing to my{" "}
+          <a
+            href="https://open.spotify.com/playlist/0u39epTT1qhLd2COWU1vtC"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.underline_on_hover}
+          >
+            favorite music,
+          </a>{" "}
+          engaging in my swim team, or simply socializing with friends. I plan
+          to pursue further my passion for computer science to contribute to my
+          community.
         </p>
       </div>
 

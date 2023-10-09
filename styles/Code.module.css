@@ -1,30 +1,30 @@
 .description {
-    font-size: 1em;
-    margin-bottom: 0;
+  font-size: 1em;
+  margin-bottom: 0;
 }
 
 .code {
-    text-align: left; /* override the default */
-    font-family: monospace;
-    font-size: 1.2em;
-    color: #fff;
-    background-color: #ec3750;
-    padding: 0.5em;
-    border-radius: 5px;
-    display: block;
-    overflow: auto;
-    white-space: pre;
-    word-wrap: normal;
-    word-break: normal;
-    line-height: 1.5em;
-    max-height: 20em;
-    overflow-y: auto;
-    overflow-x: auto;
-    user-select: none;
+  text-align: left; /* override the default */
+  font-family: monospace;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #a633d6;
+  padding: 0.5em;
+  border-radius: 5px;
+  display: block;
+  overflow: auto;
+  white-space: pre;
+  word-wrap: normal;
+  word-break: normal;
+  line-height: 1.5em;
+  max-height: 20em;
+  overflow-y: auto;
+  overflow-x: auto;
+  user-select: none;
 }
 
 @media screen and (max-width: 600px) {
-    .code {
-        white-space: pre-wrap;
-    }
+  .code {
+    white-space: pre-wrap;
+  }
 }

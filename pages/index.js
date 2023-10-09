@@ -6,24 +6,24 @@ import styles from "@/styles/Home.module.css";
 // Components
 import Profile from "@/components/Profile";
 import Projects from "@/components/Projects";
-import Webring from "@/components/Webring";
-import Soon from "@/components/Soon";
+// import Webring from "@/components/Webring";
+// import Soon from "@/components/Soon";
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Zeyu Yao</title>
+        <title>Zeyu Yao | Portfolio</title>
         <meta
           name="description"
-          content="Grade 9 student and full-stack developer currently studying in Singapore"
+          content="Grade 10 student and full-stack developer currently studying in Singapore"
         />
         <link rel="icon" href="/favicon.ico" />
 
         <meta property="og:title" content="Zeyu Yao" />
         <meta
           property="og:description"
-          content="Grade 9 student and full-stack developer currently studying in Singapore"
+          content="Grade 10 student and full-stack developer currently studying in Singapore"
         />
         <meta
           property="og:image"
@@ -35,7 +35,7 @@ export default function Home() {
         <meta name="twitter:title" content="Zeyu Yao" />
         <meta
           name="twitter:description"
-          content="Grade 9 student and full-stack developer currently studying in Singapore"
+          content="Grade 10 student and full-stack developer currently studying in Singapore"
         />
         <meta
           name="twitter:image"
@@ -49,8 +49,8 @@ export default function Home() {
 
         <meta name="apple-mobile-web-app-title" content="Zeyu Yao" />
         <meta name="application-name" content="Zeyu Yao" />
-        <meta name="msapplication-TileColor" content="#ec3750" />
-        <meta name="theme-color" content="#ec3750" />
+        <meta name="msapplication-TileColor" content="#a633d6" />
+        <meta name="theme-color" content="#a633d6" />
 
         <link
           rel="apple-touch-icon"
@@ -74,9 +74,9 @@ export default function Home() {
 
       <main className={styles.main}>
         <Profile />
-        {/* <Projects /> */}
-        <Soon />
-        <Webring />
+        <Projects />
+        {/* <Soon /> */}
+        {/* <Webring /> */}
       </main>
     </div>
   );

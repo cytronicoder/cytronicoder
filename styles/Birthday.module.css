@@ -1,66 +1,73 @@
 .container {
-    margin: 0 auto;
-    padding: 0 50px;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+  margin: 0 auto;
+  padding: 0 50px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .title {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
 .seconds {
-    color: #ec3750;
+  color: #a633d6;
 }
 
 .minutes {
-    color: #f16a7d;
+  color: #33a6d6;
 }
 
 .hours {
-    color: #f594a1;
+  color: #d6a633;
 }
 
 .days {
-    color: #f9bec6;
+  color: #33d6a6;
 }
 
 .dinoImage {
-    display: block;
+  display: block;
 }
 
 .buttons {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .buttons button {
-    background-color: #ec3750;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
 }
 
 @media (prefers-color-scheme: dark) {
-    .dinoImage {
-        filter: invert(1);
-    }
+  .dinoImage {
+    filter: invert(1);
+  }
 }
 
 @media (max-width: 768px) {
-    .dinoImage {
-        display: none;
-    }
+  .dinoImage {
+    display: none;
+  }
 }
