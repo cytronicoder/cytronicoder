@@ -82,7 +82,7 @@ export default function Bio() {
                 In my free time, you can find me immersed in (or ranting about) a good
                 book, vibing to my{" "}
                 <a
-                    href="https://open.spotify.com/playlist/0u39epTT1qhLd2COWU1vtC"
+                    href="https://open.spotify.com/playlist/6CTgP2IZqL9STkPirN20Kz"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.underline_on_hover}
