@@ -10,7 +10,8 @@ import Projects from "@/components/Projects";
 import TabsContainer from "@/components/TabsContainer";
 import BlogWidget from "@/components/BlogWidget";
 import CurrentlyPlaying from "@/components/CurrentlyPlaying";
-// import Webring from "@/components/Webring";
+import BirthdayWiget from "@/components/BirthdayWidget";
+import Webring from "@/components/Webring";
 // import Soon from "@/components/Soon";
 
 export default function Home() {
@@ -89,10 +90,10 @@ export default function Home() {
         <div className={styles.widgets}>
           <BlogWidget />
           <CurrentlyPlaying />
-          {/* <BirthdayWiget /> */}
+          <BirthdayWiget />
+          <Webring />
         </div>
         {/* <Soon /> */}
-        {/* <Webring /> */}
       </main>
     </div>
   );
