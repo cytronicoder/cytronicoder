@@ -29,7 +29,6 @@
 }
 
 .tabContent {
-  width: 100%;
   max-width: 800px;
   margin: 0 auto;
   border-top: 3px solid #222;
@@ -39,11 +38,7 @@
 @media (max-width: 800px) {
   .tabs {
     margin-top: 20px;
-  }
-
-  .tab {
-    padding: 5px 10px;
-    font-size: 14px;
+    justify-content: center;
   }
 
   .tabContent {
