@@ -4,12 +4,24 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 
 // Components
-import Profile from "@/components/Profile";
+import Header from "@/components/Header";
+import Bio from "@/components/Bio";
 import Projects from "@/components/Projects";
-// import Webring from "@/components/Webring";
+import TabsContainer from "@/components/TabsContainer";
+import BlogWidget from "@/components/BlogWidget";
+import CurrentlyPlaying from "@/components/CurrentlyPlaying";
+import BirthdayWiget from "@/components/BirthdayWidget";
+import Webring from "@/components/Webring";
 // import Soon from "@/components/Soon";
 
 export default function Home() {
+
+  const tabs = [
+    { id: 'bio', title: 'Bio', content: <Bio /> },
+    { id: 'projects', title: 'Projects', content: <Projects /> },
+    // { id: 'webring', title: 'Webring', content: <Webring /> },
+  ];
+
   return (
     <div className={styles.container}>
       <Head>
@@ -73,10 +85,15 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Profile />
-        <Projects />
+        <Header />
+        <TabsContainer components={tabs} />
+        <div className={styles.widgets}>
+          <BlogWidget />
+          <CurrentlyPlaying />
+          <BirthdayWiget />
+          <Webring />
+        </div>
         {/* <Soon /> */}
-        {/* <Webring /> */}
       </main>
     </div>
   );

@@ -1,9 +1,3 @@
-.profile {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
 .profileHeader {
   display: grid;
   grid-template-columns: 0.75fr 0.75fr 1.25fr 1.25fr;
@@ -11,7 +5,9 @@
   grid-template-areas: "profileImage profileTitle socialMedia achievements";
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .profileImage {
@@ -67,13 +63,6 @@
 
 .oneliner {
   display: inline-block;
-}
-
-.widgets {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  justify-content: center;
 }
 
 .underline_on_hover {
