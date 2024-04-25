@@ -88,10 +88,10 @@ export default function Home() {
         <Header />
         <TabsContainer components={tabs} />
         <div className={styles.widgets}>
-          <BlogWidget />
+          {/* <BlogWidget /> */}
           <CurrentlyPlaying />
-          <BirthdayWiget />
-          <Webring />
+          {/* <BirthdayWiget /> */}
+          <Webring />``
         </div>
         {/* <Soon /> */}
       </main>
