@@ -91,7 +91,7 @@ export default function Home() {
           {/* <BlogWidget /> */}
           <CurrentlyPlaying />
           {/* <BirthdayWiget /> */}
-          <Webring />``
+          <Webring />
         </div>
         {/* <Soon /> */}
       </main>
