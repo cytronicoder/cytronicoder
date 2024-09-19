@@ -11,13 +11,14 @@
 .tab {
   padding: 10px 20px;
   cursor: pointer;
-  background: black;
-  border: 1px solid #555;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
   font-size: 16px;
   font-weight: bold;
-  margin-right: 2px;
+  margin-right: 5px;
   margin-bottom: -1px;
   transition: background-color 0.3s ease;
   display: inline-block;
@@ -25,14 +26,33 @@
 
 .tab.active,
 .tab:hover {
-  background: #222;
+  background: #9900ff;
+  color: white;
 }
 
 .tabContent {
   max-width: 800px;
   margin: 0 auto;
-  border-top: 3px solid #222;
+  border-top: 3px solid black;
   padding: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .tab {
+    background: #222;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+  }
+
+  .tab.active,
+  .tab:hover {
+    background: #555;
+  }
+
+  .tabContent {
+    border-top: 3px solid white;
+  }
 }
 
 @media (max-width: 800px) {
