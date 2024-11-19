@@ -36,7 +36,7 @@ export default function SpotifyWidget() {
                 <Widget svg={SpotifyLogo}>
                     {song.isPlaying ? (
                         <>
-                            I am currently listening to{" "}
+                            Listening to{" "}
                             <Link
                                 href={song.songUrl}
                                 target="_blank"
