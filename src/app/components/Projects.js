@@ -33,7 +33,7 @@ export default function Projects() {
         <div className={styles.container}>
             {isLoaded ? (
                 <div>
-                    <p>I&apos;ve been working on...</p>
+                    <p>I&apos;ve worked on...</p>
                     {error ? (
                         <>
                             <p>
@@ -54,13 +54,7 @@ export default function Projects() {
                         <div className={styles.projects}>
                             {projects.length > 0 ? (
                                 projects
-                                    // Sort by last updated
-                                    .sort(
-                                        (a, b) => new Date(b.updated_at) - new Date(a.updated_at)
-                                    )
-                                    // Reverse order for descending
-                                    .reverse()
-                                    // Limit to one project
+                                    .sort(() => Math.random() - 0.5)
                                     .slice(0, 1)
                                     // Map projects with a unique key
                                     .map((project, index) => (
