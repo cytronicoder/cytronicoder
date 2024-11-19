@@ -1,0 +1,10 @@
+.container {
+  display: block;
+  margin: 1rem auto;
+  max-width: 800px;
+  width: 100%;
+}
+
+.projects {
+  margin: 1rem 0;
+}

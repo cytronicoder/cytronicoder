@@ -1,0 +1,39 @@
+:root {
+  --background: #a66fcf;
+  --foreground: #ede0f8;
+  --primary-color: #9900ff;
+  --text-color: #000000;
+  --background-color: #ffffff;
+}
+
+[data-theme="dark"] {
+  --background: #bfa4e6;
+  --foreground: #ffffff;
+  --primary-color: #bfa4e6;
+  --text-color: #ffffff;
+  --background-color: #121212;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
