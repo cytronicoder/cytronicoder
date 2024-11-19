@@ -33,7 +33,7 @@ export default function Projects() {
         <div className={styles.container}>
             {isLoaded ? (
                 <div>
-                    <p>I've been working on...</p>
+                    <p>I&apos;ve been working on...</p>
                     {error ? (
                         <>
                             <p>
