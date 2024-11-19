@@ -35,17 +35,13 @@ export default function SpotifyWidget() {
             {isLoaded ? (
                 <Widget svg={SpotifyLogo}>
                     {song.isPlaying ? (
-                        <>
-                            Listening to{" "}
-                            <Link
-                                href={song.songUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                {song.title}
-                            </Link>{" "}
-                            by {song.artist}!
-                        </>
+                        <Link
+                            href={song.songUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            {song.title} by {song.artist}
+                        </Link>
                     ) : (
                         <>I am not currently listening to anything.</>
                     )}
