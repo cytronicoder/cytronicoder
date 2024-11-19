@@ -16,11 +16,16 @@
 
 .header {
   display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .logo {
+  width: 24px;
+  height: 24px;
   margin-right: 0.5rem;
   filter: invert(1);
+  display: inline-block;
 }
 
 .logo:hover {
@@ -29,5 +34,7 @@
 }
 
 .title {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: inline-block;
 }
