@@ -7,6 +7,8 @@ import { useState, useEffect } from "react";
 import SpotifyLogo from "../../../public/spotify.svg";
 import Widget from "./Widget";
 
+import styles from "./SpotifyWidget.module.css";
+
 export default function SpotifyWidget() {
     const fetcher = (url) => fetch(url).then((r) => r.json());
     const [song, setSong] = useState({});
@@ -45,6 +47,7 @@ export default function SpotifyWidget() {
                             href={song.songUrl}
                             target="_blank"
                             rel="noopener noreferrer"
+                            className={styles.underline_on_hover}
                         >
                             I am listening to {song.title} by {song.artist}!
                         </Link>
