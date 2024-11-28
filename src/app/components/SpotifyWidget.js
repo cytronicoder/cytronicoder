@@ -10,23 +10,28 @@ import Widget from "./Widget";
 export default function SpotifyWidget() {
     const fetcher = (url) => fetch(url).then((r) => r.json());
     const [song, setSong] = useState({});
+    const [weather, setWeather] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
 
     useEffect(() => {
-        // Fetch the song data from the Spotify API every second
+        // Fetch Spotify data every second
         const interval = setInterval(async () => {
             fetcher("/api/spotify")
                 .then((data) => {
-                    // console.log(data);
                     setSong(data);
                     setIsLoaded(true);
                 })
-                .catch((error) => {
-                    console.log(error);
-                });
+                .catch((error) => console.log(error));
         }, 1000);
 
-        // Clear the interval when the component unmounts
+        // Fetch weather data once
+        fetcher("/api/weather")
+            .then((data) => {
+                setWeather(data.temperature ? `${data.temperature}°C` : "unavailable");
+            })
+            .catch((error) => console.log("Weather fetch error:", error));
+
+        // Clear interval on unmount
         return () => clearInterval(interval);
     }, []);
 
@@ -34,13 +39,14 @@ export default function SpotifyWidget() {
         <>
             {isLoaded ? (
                 <Widget svg={SpotifyLogo}>
+                    It's currently {weather || "unavailable"} in Singapore, and{" "}
                     {song.isPlaying ? (
                         <Link
                             href={song.songUrl}
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            {song.title} by {song.artist}
+                            I'm listening to {song.title} by {song.artist}!
                         </Link>
                     ) : (
                         <>I am not currently listening to anything.</>
