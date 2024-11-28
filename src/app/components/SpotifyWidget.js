@@ -39,14 +39,14 @@ export default function SpotifyWidget() {
         <>
             {isLoaded ? (
                 <Widget svg={SpotifyLogo}>
-                    It's currently {weather || "unavailable"} in Singapore, and{" "}
+                    It is currently {weather || "unavailable"} in Singapore, and{" "}
                     {song.isPlaying ? (
                         <Link
                             href={song.songUrl}
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            I'm listening to {song.title} by {song.artist}!
+                            I am listening to {song.title} by {song.artist}!
                         </Link>
                     ) : (
                         <>I am not currently listening to anything.</>
