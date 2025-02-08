@@ -6,7 +6,11 @@ import Typewriter from "typewriter-effect";
 import styles from "./Bio.module.css";
 
 const customBio = [
-    "work on cool projects.",
+    "USACO Platinum Division",
+    "2x AIME Qualifier",
+    "1st SEA-AIME Rank",
+    "USAMO Qualifier",
+    "AMC10 Distinction",
 ];
 
 export default function Bio() {
@@ -19,7 +23,7 @@ export default function Bio() {
     return (
         <div className={styles.profileDescription}>
             <div className={styles.staticText}>
-                👋 Hey, I{" "}
+                🏆{" "}
                 <div className={styles.oneliner}>
                     <Typewriter
                         options={{
@@ -66,12 +70,9 @@ export default function Bio() {
                     rel="noopener noreferrer"
                     className={styles.underline_on_hover}
                 >
-                    SAIS Hack Club,
+                    SAIS Hack Club.
                 </a>{" "}
-                where I lead workshops on computer science topics at my school.
-            </p>
-            <p>
-                In my free time, you can find me immersed in (or ranting about) a good
+                In my free time, you can find me reading or ranting about a good
                 book, vibing to my{" "}
                 <a
                     href="https://open.spotify.com/playlist/6CTgP2IZqL9STkPirN20Kz"
@@ -81,9 +82,8 @@ export default function Bio() {
                 >
                     favorite music,
                 </a>{" "}
-                engaging in my swim team, or simply socializing with friends. I plan
-                to pursue further my passion for computer science to contribute to my
-                community.
+                or simply socializing with friends. I plan to keep working on
+                projects that make a difference in the world.
             </p>
         </div>
     );

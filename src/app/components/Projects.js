@@ -55,7 +55,7 @@ export default function Projects() {
                             {projects.length > 0 ? (
                                 projects
                                     .sort(() => Math.random() - 0.5)
-                                    .slice(0, 1)
+                                    .slice(0, 2)
                                     // Map projects with a unique key
                                     .map((project, index) => (
                                         <Project
@@ -71,7 +71,11 @@ export default function Projects() {
                             )}
                         </div>
                     )}
-                    <p style={{ textAlign: "right" }}>...and more!</p>
+                    <p style={{ textAlign: "right" }}>...and{" "}
+                        <a href="https://github.com/cytronicoder" target="_blank" rel="noopener noreferrer" className={styles.underline_on_hover}>
+                            more!
+                        </a>
+                    </p>
                 </div>
             ) : (
                 <div>

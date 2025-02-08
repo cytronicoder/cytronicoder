@@ -29,7 +29,7 @@ export default function Home() {
             <div className={styles.introText}>
               <h1 className={styles.name}>Zeyu Yao{" "}<ThemeProvider /></h1>
               <p className={styles.subtitle}>
-                High School Student & Aspiring Bioinformatics Researcher
+                Grade 11 student in Singapore
               </p>
               <div className={styles.socialMedia}>
                 <a
