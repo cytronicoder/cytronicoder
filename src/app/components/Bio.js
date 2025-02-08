@@ -41,7 +41,7 @@ export default function Bio() {
     return (
         <div className={styles.profileDescription}>
             <div className={styles.staticText}>
-                🏆{" "}
+                💭{" "}
                 <div className={styles.oneliner}>
                     <Typewriter
                         options={{
