@@ -6,11 +6,29 @@ import Typewriter from "typewriter-effect";
 import styles from "./Bio.module.css";
 
 const customBio = [
-    "USACO Platinum Division",
-    "2x AIME Qualifier",
-    "1st SEA-AIME Rank",
-    "USAMO Qualifier",
-    "AMC10 Distinction",
+    "Achieved USACO Platinum with perfect score",
+    "Qualified for USAMO with AIME score 14/15",
+    "Ranked 1st in SEA-AIME, top in Southeast Asia",
+    "Scored perfect 150/150 in AMC10, top 1%",
+    "Earned AMC12 Honor Roll, top 1% globally",
+    "Won Gold in American Math Olympiad (Global 6th)",
+    "Placed 1st in Singapore & Asian Schools Olympiad",
+    "Won Gold in Singapore Math Finals, ranked 1st",
+    "Secured Math Kangaroo Gold, 1st globally",
+    "Published first-author research in bioinformatics",
+    "Youngest speaker at GIW ISCB Asia & IEEE BHI",
+    "Selected as Stanford AI4ALL Scholar (30 chosen)",
+    "Garcia Research Scholar, Stony Brook (100 chosen)",
+    "Developed BioRSP, gene expression analysis tool",
+    "Created ProLiDE, AI-driven drug evaluation tool",
+    "Researched AI-driven genomics at University of Chicago",
+    "Studied cancer drug resistance at UAB AI.MED",
+    "Analyzed exome sequencing in 1000 Genomes Project",
+    "Trained CNNs on NVIDIA Jetson Nano for AI research",
+    "Developed AI models for protein-ligand interactions",
+    "Designed LSTM stock predictor with deep learning",
+    "Built Connect 4 solver with alpha-beta pruning",
+    "Created blockchain-based disaster relief platform"
 ];
 
 export default function Bio() {
