@@ -10,7 +10,7 @@
 .marqueeContent {
   display: flex;
   flex-direction: column;
-  animation: scrollUp 360s linear infinite;
+  animation: scrollUp 600s linear infinite;
 }
 
 @keyframes scrollUp {

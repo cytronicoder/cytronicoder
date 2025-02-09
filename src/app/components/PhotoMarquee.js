@@ -1,14 +1,19 @@
-import fs from "fs";
-import path from "path";
+"use client";
+
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./PhotoMarquee.module.css";
 
 export default function PhotoMarquee() {
-    const photosDirectory = path.join(process.cwd(), "public", "photos");
-    const photoFiles = fs.readdirSync(photosDirectory);
+    const [photos, setPhotos] = useState([]);
 
-    const photos = photoFiles.map((fileName) => `/photos/${fileName}`);
-    photos.sort(() => Math.random() - 0.5);
+    useEffect(() => {
+        fetch("/api/photos")
+            .then((res) => res.json())
+            .then((data) => {
+                setPhotos(data.sort(() => Math.random() - 0.5));
+            });
+    }, []);
 
     return (
         <div className={styles.marqueeContainer}>
@@ -21,6 +26,8 @@ export default function PhotoMarquee() {
                             width={300}
                             height={400}
                             className={styles.photo}
+                            priority
+                            quality={100}
                         />
                     </div>
                 ))}
