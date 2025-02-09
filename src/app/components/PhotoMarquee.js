@@ -17,21 +17,23 @@ export default function PhotoMarquee() {
 
     return (
         <div className={styles.marqueeContainer}>
-            <div className={styles.marqueeContent}>
-                {photos.concat(photos).map((src, index) => (
-                    <div key={index} className={styles.photoWrapper}>
-                        <Image
-                            src={src}
-                            alt={`Photo ${index + 1}`}
-                            width={300}
-                            height={400}
-                            className={styles.photo}
-                            priority={true}
-                            quality={100}
-                        />
-                    </div>
-                ))}
-            </div>
+            {photos.length > 0 && (
+                <div key={photos.join("-")} className={styles.marqueeContent}>
+                    {photos.concat(photos).map((src, index) => (
+                        <div key={index} className={styles.photoWrapper}>
+                            <Image
+                                src={src}
+                                alt={`Photo ${index + 1}`}
+                                width={300}
+                                height={400}
+                                className={styles.photo}
+                                priority={true}
+                                quality={100}
+                            />
+                        </div>
+                    ))}
+                </div>
+            )}
         </div>
     );
 }
