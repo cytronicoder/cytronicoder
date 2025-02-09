@@ -1,0 +1,64 @@
+.profileDescription p {
+  margin-bottom: 1rem;
+}
+
+.staticText {
+  line-height: 1.5;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.oneliner {
+  display: inline-block;
+}
+
+.underline_on_hover {
+  display: inline-block;
+  position: relative;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.underline_on_hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.underline_on_hover:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.cursor {
+  color: #a633d6;
+  font-weight: bold;
+  animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .underline_on_hover {
+    display: inline;
+  }
+
+  .underline_on_hover::after {
+    display: none;
+  }
+
+  .underline_on_hover:hover {
+    text-decoration: underline;
+  }
+}

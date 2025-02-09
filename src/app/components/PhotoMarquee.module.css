@@ -1,0 +1,32 @@
+.marqueeContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.marqueeContent {
+  display: flex;
+  flex-direction: column;
+  animation: scrollUp 600s linear infinite;
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+}
+
+[data-theme="dark"] .marqueeContent {
+  opacity: 0.75;
+}
