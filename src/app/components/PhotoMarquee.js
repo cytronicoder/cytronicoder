@@ -26,7 +26,7 @@ export default function PhotoMarquee() {
                             width={300}
                             height={400}
                             className={styles.photo}
-                            priority
+                            priority={true}
                             quality={100}
                         />
                     </div>
