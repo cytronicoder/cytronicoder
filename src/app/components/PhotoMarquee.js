@@ -48,7 +48,10 @@ export default function PhotoMarquee() {
     return (
         <div className={styles.marqueeContainer}>
             {photos.length > 0 && (
-                <div key={photos.join("-")} className={styles.marqueeContent}>
+                <div
+                    key={photos.join("-")}
+                    className={`${styles.marqueeContent} ${!isLoading && styles.animate}`}
+                >
                     {photos.concat(photos).map((src, index) => (
                         <div key={index} className={styles.photoWrapper}>
                             <OptimizedImage

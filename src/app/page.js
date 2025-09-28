@@ -1,10 +1,12 @@
-import { lazy, Suspense } from "react";
+"use client"
+
+import { lazy, Suspense, useState, useEffect } from "react";
 import styles from "./page.module.css";
-import Bio from "./components/Bio";
 import ProfileImage from "./components/ProfileImage";
 import ProfilePic from "../../public/profile.jpg";
 import ThemeProvider from "./components/ThemeProvider";
 import PerformanceMonitor from "./components/PerformanceMonitor";
+import Webring from "./components/Webring";
 
 import GitHubIcon from "../../public/github.svg";
 import TwitterIcon from "../../public/twitter.svg";
@@ -17,6 +19,23 @@ const SpotifyWidget = lazy(() => import("./components/SpotifyWidget"));
 const Projects = lazy(() => import("./components/Projects"));
 
 export default function Home() {
+  const [weather, setWeather] = useState(null);
+
+  useEffect(() => {
+    const fetchWeatherData = async () => {
+      try {
+        const res = await fetch("/api/weather");
+        const data = await res.json();
+        setWeather(data.forecast || "unavailable");
+      } catch (error) {
+        console.error("Weather fetch error:", error);
+        setWeather("unavailable");
+      }
+    };
+
+    fetchWeatherData();
+  }, []);
+
   return (
     <div className={styles.page}>
       <main className={styles.main}>
@@ -32,7 +51,7 @@ export default function Home() {
             <div className={styles.introText}>
               <h1 className={styles.name}>Zeyu Yao{" "}<ThemeProvider /></h1>
               <p className={styles.subtitle}>
-                Grade 11 student in Singapore
+                Student in Singapore. It's currently {weather ? `${weather}` : "loading..."}.
               </p>
               <div className={styles.socialMedia}>
                 <a
@@ -100,10 +119,6 @@ export default function Home() {
           </section>
 
           <section className={styles.section}>
-            <Bio />
-          </section>
-
-          <section className={styles.section}>
             <Suspense fallback={
               <div className="flex items-center justify-center h-24 bg-gray-50 rounded-lg animate-pulse">
                 <div className="text-gray-500">Loading Spotify widget...</div>
@@ -122,9 +137,13 @@ export default function Home() {
               <Projects />
             </Suspense>
           </section>
+
+          <Webring />
         </div>
       </main>
-
+      <Suspense fallback={<div>Loading...</div>}>
+        <PhotoMarquee />
+      </Suspense>
       <aside className={styles.marquee}>
         <Suspense fallback={
           <div className="flex items-center justify-center h-full bg-gray-50 animate-pulse">

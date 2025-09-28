@@ -11,7 +11,6 @@ import styles from "./SpotifyWidget.module.css";
 export default function SpotifyWidget() {
     const fetcher = (url) => fetch(url).then((r) => r.json());
     const [song, setSong] = useState({});
-    const [weather, setWeather] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
 
     useEffect(() => {
@@ -36,18 +35,7 @@ export default function SpotifyWidget() {
             }
         };
 
-        const fetchWeatherData = async () => {
-            try {
-                const data = await fetcher("/api/weather");
-                setWeather(data.temperature ? `${data.temperature}°C` : "unavailable");
-            } catch (error) {
-                console.error("Weather fetch error:", error);
-                setWeather("unavailable");
-            }
-        };
-
         fetchSpotifyData();
-        fetchWeatherData();
 
         const spotifyInterval = setInterval(fetchSpotifyData, 30 * 1000);
         return () => clearInterval(spotifyInterval);
@@ -57,7 +45,6 @@ export default function SpotifyWidget() {
         <>
             {isLoaded ? (
                 <Widget svg={SpotifyLogo}>
-                    It is currently {weather || "unavailable"} in Singapore, and{" "}
                     {song.isPlaying ? (
                         <Link
                             href={song.songUrl}

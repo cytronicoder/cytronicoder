@@ -10,8 +10,12 @@
 .marqueeContent {
   display: flex;
   flex-direction: column;
-  animation: scrollUp 600s linear infinite;
   align-items: flex-end;
+  gap: 20px;
+}
+
+.animate {
+  animation: scrollUp 600s linear infinite;
 }
 
 @keyframes scrollUp {

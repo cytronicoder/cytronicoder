@@ -1,4 +1,4 @@
-const WEATHER_API_ENDPOINT = `https://api.data.gov.sg/v1/environment/air-temperature`;
+const WEATHER_API_ENDPOINT = `https://api-open.data.gov.sg/v2/real-time/api/two-hr-forecast`;
 
 let cachedWeatherData = null;
 let cacheTimestamp = 0;
@@ -14,6 +14,14 @@ const getWeatherData = async () => {
     return response.json();
 };
 
+const getConversationalForecast = (forecast) => {
+    const lowerCaseForecast = forecast.toLowerCase();
+    if (lowerCaseForecast.includes("fair")) {
+        return "clear skies";
+    }
+    return lowerCaseForecast;
+};
+
 export async function GET() {
     try {
         const now = Date.now();
@@ -26,7 +34,7 @@ export async function GET() {
 
         const data = await getWeatherData();
 
-        if (!data || !data.items || !data.items[0] || !data.items[0].readings) {
+        if (!data || !data.data || !data.data.items || !data.data.items[0] || !data.data.items[0].forecasts) {
             if (cachedWeatherData) {
                 console.log("Weather API returned no data, serving cached data");
                 return new Response(JSON.stringify(cachedWeatherData), {
@@ -36,7 +44,7 @@ export async function GET() {
             }
 
             return new Response(
-                JSON.stringify({ error: "No weather data available", temperature: "unavailable", unit: "°C" }),
+                JSON.stringify({ error: "No weather data available", forecast: "unavailable" }),
                 {
                     status: 200,
                     headers: { "Content-Type": "application/json" },
@@ -44,14 +52,47 @@ export async function GET() {
             );
         }
 
-        const readings = data.items[0].readings;
-        const averageTemperature =
-            readings.reduce((sum, reading) => sum + reading.value, 0) /
-            readings.length;
+        const location = process.env.WEATHER_LOCATION;
+        const forecasts = data.data.items[0].forecasts;
+        let forecastToUse;
+
+        if (location) {
+            const specificForecast = forecasts.find(f => f.area === location);
+            if (specificForecast) {
+                forecastToUse = specificForecast.forecast;
+            }
+        }
+
+        if (!forecastToUse) {
+            const forecastCounts = forecasts.reduce((acc, item) => {
+                acc[item.forecast] = (acc[item.forecast] || 0) + 1;
+                return acc;
+            }, {});
+
+            forecastToUse = Object.keys(forecastCounts).reduce((a, b) =>
+                forecastCounts[a] > forecastCounts[b] ? a : b
+            );
+        }
+
+        if (!forecastToUse) {
+            if (cachedWeatherData) {
+                console.log("No forecast found, serving cached data");
+                return new Response(JSON.stringify(cachedWeatherData), {
+                    status: 200,
+                    headers: { "Content-Type": "application/json" },
+                });
+            }
+            return new Response(
+                JSON.stringify({ error: "No forecast found", forecast: "unavailable" }),
+                {
+                    status: 200,
+                    headers: { "Content-Type": "application/json" },
+                }
+            );
+        }
 
         const weatherData = {
-            temperature: averageTemperature.toFixed(1),
-            unit: "°C",
+            forecast: getConversationalForecast(forecastToUse),
         };
 
         cachedWeatherData = weatherData;
@@ -80,8 +121,7 @@ export async function GET() {
                 JSON.stringify({
                     error: "Rate limited",
                     message: "Weather API rate limited, please try again later",
-                    temperature: "unavailable",
-                    unit: "°C",
+                    forecast: "unavailable",
                     fallback: true
                 }),
                 {
@@ -92,7 +132,7 @@ export async function GET() {
         }
 
         return new Response(
-            JSON.stringify({ error: "Internal Server Error", temperature: "unavailable", unit: "°C" }),
+            JSON.stringify({ error: "Internal Server Error", forecast: "unavailable" }),
             {
                 status: 500,
                 headers: { "Content-Type": "application/json" },
@@ -100,3 +140,4 @@ export async function GET() {
         );
     }
 }
+

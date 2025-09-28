@@ -20,10 +20,20 @@
 .project_title {
   font-size: 1.3rem;
   color: var(--primary-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.project:hover .project_title {
+  color: var(--background-color);
 }
 
 .project_description {
   font-size: 1.1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.project:hover .project_description {
+  color: var(--background-color);
 }
 
 [data-theme="light"] .project {

@@ -1,0 +1,55 @@
+.webring {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid var(--primary-color);
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  background-color: var(--background);
+  margin-top: 2rem;
+}
+
+.title {
+  font-weight: bold;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.title:hover {
+  color: var(--text-color);
+}
+
+.link {
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 0 0.5rem;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .webring {
+  background-color: var(--background);
+  border-color: var(--primary-color);
+}
+
+[data-theme="dark"] .title {
+  color: var(--primary-color);
+}
+
+[data-theme="dark"] .title:hover {
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .link {
+  color: var(--primary-color);
+}
+
+[data-theme="dark"] .link:hover {
+  color: var(--text-color);
+}
+
