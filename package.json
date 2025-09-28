@@ -9,17 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@octokit/core": "^6.1.6",
-    "next": "15.0.3",
-    "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106",
+    "@octokit/core": "^7.0.4",
+    "next": "15.5.4",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
     "typewriter-effect": "^2.22.0",
     "vanilla-tilt": "^1.8.1"
   },
   "devDependencies": {
-    "dotenv": "^16.6.1",
+    "dotenv": "^17.2.2",
     "eslint": "^9.36.0",
-    "eslint-config-next": "15.0.3"
+    "eslint-config-next": "15.5.4"
   },
   "packageManager": "pnpm@10.12.1+sha512.f0dda8580f0ee9481c5c79a1d927b9164f2c478e90992ad268bbb2465a736984391d6333d2c327913578b2804af33474ca554ba29c04a8b13060a717675ae3ac"
 }
