@@ -6,14 +6,44 @@ import styles from "./PhotoMarquee.module.css";
 
 export default function PhotoMarquee() {
     const [photos, setPhotos] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch("/api/photos")
-            .then((res) => res.json())
-            .then((data) => {
-                setPhotos(data.sort(() => Math.random() - 0.5));
-            });
+        const fetchPhotos = async () => {
+            try {
+                const res = await fetch("/api/photos");
+
+                if (!res.ok) {
+                    throw new Error(`HTTP ${res.status}: ${res.statusText}`);
+                }
+
+                const data = await res.json();
+
+                if (Array.isArray(data) && data.length > 0) {
+                    setPhotos(data.sort(() => Math.random() - 0.5));
+                } else {
+                    setError("No photos available");
+                }
+
+                setIsLoading(false);
+            } catch (error) {
+                console.error("Error fetching photos:", error);
+                setError(error.message);
+                setIsLoading(false);
+            }
+        };
+
+        fetchPhotos();
     }, []);
+
+    if (isLoading) {
+        return <div className={styles.marqueeContainer}>Loading photos...</div>;
+    }
+
+    if (error) {
+        return <div className={styles.marqueeContainer}>Unable to load photos: {error}</div>;
+    }
 
     return (
         <div className={styles.marqueeContainer}>
