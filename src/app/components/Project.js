@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-// Styles
 import styles from "./Project.module.css";
 
 export default function Project({ project }) {

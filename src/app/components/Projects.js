@@ -1,11 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-
-// Styles
 import styles from "./Projects.module.css";
-
-// Components
 import Project from "./Project";
 
 export default function Projects() {
@@ -15,10 +11,8 @@ export default function Projects() {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        // Fetch GitHub data
         fetcher("/api/github")
             .then((data) => {
-                // Filter out the profile repository
                 const filteredProjects = data.filter((project) => project.name !== "cytronicoder");
                 setProjects(filteredProjects);
                 setIsLoaded(true);
@@ -56,7 +50,6 @@ export default function Projects() {
                                 projects
                                     .sort(() => Math.random() - 0.5)
                                     .slice(0, 2)
-                                    // Map projects with a unique key
                                     .map((project, index) => (
                                         <Project
                                             project={project}
