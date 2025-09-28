@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
-// Assets
 import SpotifyLogo from "../../../public/spotify.svg";
 import Widget from "./Widget";
 
@@ -16,25 +15,42 @@ export default function SpotifyWidget() {
     const [isLoaded, setIsLoaded] = useState(false);
 
     useEffect(() => {
-        // Fetch Spotify data every second
-        const interval = setInterval(async () => {
-            fetcher("/api/spotify")
-                .then((data) => {
-                    setSong(data);
-                    setIsLoaded(true);
-                })
-                .catch((error) => console.log(error));
-        }, 1000);
+        const fetchSpotifyData = async () => {
+            try {
+                const data = await fetcher("/api/spotify");
 
-        // Fetch weather data once
-        fetcher("/api/weather")
-            .then((data) => {
+                if (data.fallback) {
+                    console.log("Spotify API is rate limited");
+                    if (!song.isPlaying) {
+                        setSong({ isPlaying: false });
+                    }
+                    return;
+                }
+
+                setSong(data);
+                setIsLoaded(true);
+            } catch (error) {
+                console.error("Error fetching Spotify data:", error);
+                setSong({ isPlaying: false, error: true });
+                setIsLoaded(true);
+            }
+        };
+
+        const fetchWeatherData = async () => {
+            try {
+                const data = await fetcher("/api/weather");
                 setWeather(data.temperature ? `${data.temperature}°C` : "unavailable");
-            })
-            .catch((error) => console.log("Weather fetch error:", error));
+            } catch (error) {
+                console.error("Weather fetch error:", error);
+                setWeather("unavailable");
+            }
+        };
 
-        // Clear interval on unmount
-        return () => clearInterval(interval);
+        fetchSpotifyData();
+        fetchWeatherData();
+
+        const spotifyInterval = setInterval(fetchSpotifyData, 30 * 1000);
+        return () => clearInterval(spotifyInterval);
     }, []);
 
     return (

@@ -11,6 +11,10 @@ const basic = Buffer.from(`${client_id}:${client_secret}`).toString("base64");
 const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`;
 const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`;
 
+let cachedSpotifyData = null;
+let cacheTimestamp = 0;
+const CACHE_DURATION = 30 * 1000;
+
 const getAccessToken = async () => {
     const response = await fetch(TOKEN_ENDPOINT, {
         method: "POST",
@@ -43,12 +47,24 @@ const getNowPlaying = async (access_token) => {
 
 export async function GET() {
     try {
+        const now = Date.now();
+        if (cachedSpotifyData && (now - cacheTimestamp) < CACHE_DURATION) {
+            return new Response(JSON.stringify(cachedSpotifyData), {
+                status: 200,
+                headers: { "Content-Type": "application/json" },
+            });
+        }
+
         const { access_token } = await getAccessToken();
         const response = await getNowPlaying(access_token);
 
         if (response.status === 204 || response.status > 400) {
+            const notPlayingData = { isPlaying: false };
+            cachedSpotifyData = notPlayingData;
+            cacheTimestamp = now;
+
             return new Response(
-                JSON.stringify({ isPlaying: false }),
+                JSON.stringify(notPlayingData),
                 {
                     status: 200,
                     headers: { "Content-Type": "application/json" },
@@ -67,15 +83,20 @@ export async function GET() {
         const albumImageUrl = song.item.album.images[0].url;
         const songUrl = song.item.external_urls.spotify;
 
+        const songData = {
+            album,
+            albumImageUrl,
+            artist,
+            isPlaying,
+            songUrl,
+            title,
+        };
+
+        cachedSpotifyData = songData;
+        cacheTimestamp = now;
+
         return new Response(
-            JSON.stringify({
-                album,
-                albumImageUrl,
-                artist,
-                isPlaying,
-                songUrl,
-                title,
-            }),
+            JSON.stringify(songData),
             {
                 status: 200,
                 headers: { "Content-Type": "application/json" },
@@ -84,8 +105,31 @@ export async function GET() {
     } catch (error) {
         console.error("Error fetching currently playing song:", error);
 
+        if (cachedSpotifyData) {
+            console.log("Spotify API error, serving cached data");
+            return new Response(JSON.stringify(cachedSpotifyData), {
+                status: 200,
+                headers: { "Content-Type": "application/json" },
+            });
+        }
+
+        if (error.status === 429) {
+            return new Response(
+                JSON.stringify({
+                    error: "Rate limited",
+                    message: "Spotify API rate limited, please try again later",
+                    isPlaying: false,
+                    fallback: true
+                }),
+                {
+                    status: 200,
+                    headers: { "Content-Type": "application/json" },
+                }
+            );
+        }
+
         return new Response(
-            JSON.stringify({ error: "Internal Server Error" }),
+            JSON.stringify({ error: "Internal Server Error", isPlaying: false }),
             {
                 status: 500,
                 headers: { "Content-Type": "application/json" },
