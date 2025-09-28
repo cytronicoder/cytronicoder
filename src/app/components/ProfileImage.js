@@ -5,23 +5,53 @@ import Image from "next/image";
 
 const ProfileImage = ({ fallbackSrc, className, alt, width, height }) => {
     const [profileImageUrl, setProfileImageUrl] = useState(fallbackSrc);
+    const [retryCount, setRetryCount] = useState(0);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         const fetchProfileImage = async () => {
             try {
                 const response = await fetch("/api/profile-pic");
+
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+
                 const data = await response.json();
-                setProfileImageUrl(data.imageUrl);
+                if (data.fallback) {
+                    console.log("API is rate limited, using fallback image");
+                    setIsLoading(false);
+                    return;
+                }
+
+                if (data.imageUrl) {
+                    setProfileImageUrl(data.imageUrl);
+                    setRetryCount(0);
+                }
+
+                setIsLoading(false);
             } catch (error) {
                 console.error("Error fetching profile image:", error);
+                setIsLoading(false);
+
+                if (retryCount < 3) {
+                    const delay = Math.pow(2, retryCount) * 1000;
+                    setTimeout(() => {
+                        setRetryCount(prev => prev + 1);
+                        fetchProfileImage();
+                    }, delay);
+                }
             }
         };
 
         fetchProfileImage();
-        const intervalId = setInterval(fetchProfileImage, 1000);
+        const intervalId = setInterval(() => {
+            setRetryCount(0);
+            fetchProfileImage();
+        }, 5 * 60 * 1000);
 
         return () => clearInterval(intervalId);
-    }, []);
+    }, [retryCount]);
 
     return (
         <Image
