@@ -10,8 +10,9 @@
   height: 100%;
   padding: 1rem;
   background: var(--background);
-  color: var(--foreground);
+  color: var(--text-color);
   border-radius: 1rem;
+  border: 1px solid var(--primary-color);
 }
 
 .header {
@@ -24,7 +25,6 @@
   width: 24px;
   height: 24px;
   margin-right: 0.5rem;
-  filter: invert(1);
   display: inline-block;
 }
 
@@ -37,4 +37,5 @@
   font-size: 1rem;
   font-weight: bold;
   display: inline-block;
+  color: var(--primary-color);
 }

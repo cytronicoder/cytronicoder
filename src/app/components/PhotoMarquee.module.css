@@ -1,8 +1,8 @@
 .marqueeContainer {
   position: absolute;
   top: 0;
-  right: 0;
-  width: 100%;
+  right: 100px;
+  width: 550px;
   height: 100%;
   overflow: hidden;
 }
@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   animation: scrollUp 600s linear infinite;
+  align-items: flex-end;
 }
 
 @keyframes scrollUp {
@@ -23,10 +24,19 @@
 }
 
 .photo {
-  width: 100%;
   height: auto;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
 }
 
-[data-theme="dark"] .marqueeContent {
-  opacity: 0.75;
+[data-theme="dark"] .photo {
+  opacity: 0.5;
+}
+
+[data-theme="dark"] .photo:hover {
+  opacity: 1;
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+  z-index: 10;
 }

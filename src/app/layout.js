@@ -1,13 +1,9 @@
-import localFont from "next/font/local";
+import { Nunito } from "next/font/google";
 import "./globals.css";
 
-const arialRounded = localFont({
-  src: "./fonts/ArialRounded.ttf",
-  variable: "--font-arial-rounded",
-});
-const arialRoundedBold = localFont({
-  src: "./fonts/ArialRoundedBold.ttf",
-  variable: "--font-arial-rounded-bold",
+const nunito = Nunito({
+  subsets: ["latin"],
+  variable: "--font-nunito",
 });
 
 export const metadata = {
@@ -123,7 +119,7 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
-      <body className={`${arialRounded.variable} ${arialRoundedBold.variable}`}>
+      <body className={nunito.variable}>
         {children}
       </body>
     </html>

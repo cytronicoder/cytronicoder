@@ -38,7 +38,7 @@
 }
 
 .cursor {
-  color: #a633d6;
+  color: var(--primary-color);
   font-weight: bold;
   animation: blink 0.75s step-end infinite;
 }

@@ -3,12 +3,12 @@
   height: 100vh;
   background-color: var(--background-color);
   color: var(--text-color);
-  font-family: var(--font-arial-rounded), Arial, Helvetica, sans-serif;
+  font-family: var(--font-nunito), sans-serif;
   position: relative;
 }
 
 .main {
-  flex: 1;
+  width: 75%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@
 }
 
 .contentContainer {
-  max-width: 500px;
+  max-width: 700px;
   width: 100%;
 }
 
@@ -103,7 +103,7 @@
 }
 
 .marquee {
-  width: 50%;
+  width: 25%;
   height: 100vh;
   position: relative;
 }
@@ -111,7 +111,7 @@
 /* Responsive adjustments */
 @media (max-width: 1200px) {
   .marquee {
-    width: 40%;
+    width: 30%;
   }
 }
 
