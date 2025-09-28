@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
+import OptimizedImage from "./OptimizedImage";
 import styles from "./PhotoMarquee.module.css";
 
 export default function PhotoMarquee() {
@@ -51,14 +51,15 @@ export default function PhotoMarquee() {
                 <div key={photos.join("-")} className={styles.marqueeContent}>
                     {photos.concat(photos).map((src, index) => (
                         <div key={index} className={styles.photoWrapper}>
-                            <Image
+                            <OptimizedImage
                                 src={src}
                                 alt={`Photo ${index + 1}`}
                                 width={300}
                                 height={400}
                                 className={styles.photo}
-                                priority={true}
-                                quality={100}
+                                priority={index < 4}
+                                quality={85}
+                                sizes="(max-width: 768px) 50vw, 300px"
                             />
                         </div>
                     ))}

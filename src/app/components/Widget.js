@@ -1,7 +1,7 @@
 import React from "react";
 import Tilt from "./Tilt";
 import styles from "./Widget.module.css";
-import Image from "next/image";
+import OptimizedImage from "./OptimizedImage";
 
 const Widget = ({ children, svg }) => {
     return (
@@ -9,12 +9,14 @@ const Widget = ({ children, svg }) => {
             <div className={styles.container}>
                 <header className={styles.header}>
                     {svg && (
-                        <Image
+                        <OptimizedImage
                             src={svg}
                             alt={"Logo"}
                             width={24}
                             height={24}
                             className={styles.logo}
+                            priority={true}
+                            sizes="24px"
                         />
                     )}
                     <div>

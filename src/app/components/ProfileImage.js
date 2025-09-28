@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
+import OptimizedImage from "./OptimizedImage";
 
 const ProfileImage = ({ fallbackSrc, className, alt, width, height }) => {
     const [profileImageUrl, setProfileImageUrl] = useState(fallbackSrc);
@@ -54,13 +54,15 @@ const ProfileImage = ({ fallbackSrc, className, alt, width, height }) => {
     }, [retryCount]);
 
     return (
-        <Image
+        <OptimizedImage
             className={className}
             src={profileImageUrl || fallbackSrc}
             alt={alt}
             width={width}
             height={height}
-            priority
+            priority={true}
+            quality={90}
+            sizes="150px"
         />
     );
 };
