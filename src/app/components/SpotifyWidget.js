@@ -39,7 +39,7 @@ export default function SpotifyWidget() {
 
         const spotifyInterval = setInterval(fetchSpotifyData, 30 * 1000);
         return () => clearInterval(spotifyInterval);
-    }, []);
+    }, [song.isPlaying]);
 
     return (
         <>

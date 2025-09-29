@@ -51,7 +51,7 @@ export default function Home() {
             <div className={styles.introText}>
               <h1 className={styles.name}>Zeyu Yao{" "}<ThemeProvider /></h1>
               <p className={styles.subtitle}>
-                Student in Singapore. It's currently {weather ? `${weather}` : "loading..."}.
+                Student in Singapore. It&apos;s currently {weather ? `${weather}` : "loading..."}.
               </p>
               <div className={styles.socialMedia}>
                 <a
