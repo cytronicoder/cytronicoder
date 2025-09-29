@@ -1,0 +1,30 @@
+{
+  "redirects": [
+    {
+      "source": "/x",
+      "destination": "https://x.com/cytronicoder",
+      "permanent": true
+    },
+    {
+      "source": "/github",
+      "destination": "https://github.com/cytronicoder",
+      "permanent": true
+    },
+    {
+      "source": "/linkedin",
+      "destination": "https://www.linkedin.com/in/cytronicoder/",
+      "permanent": true
+    },
+    {
+      "source": "/instagram",
+      "destination": "https://www.instagram.com/cytronical/",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/:path*",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }]
+    }
+  ]
+}
