@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import OptimizedImage from "./OptimizedImage";
 
-const ProfileImage = ({ fallbackSrc, className, alt, width, height }) => {
+const ProfileImage = ({ fallbackSrc, className, alt = "Zeyu Yao's profile picture", width, height }) => {
     const [profileImageUrl, setProfileImageUrl] = useState(fallbackSrc);
     const [retryCount, setRetryCount] = useState(0);
     const [isLoading, setIsLoading] = useState(true);
