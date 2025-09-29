@@ -141,9 +141,6 @@ export default function Home() {
           <Webring />
         </div>
       </main>
-      <Suspense fallback={<div>Loading...</div>}>
-        <PhotoMarquee />
-      </Suspense>
       <aside className={styles.marquee}>
         <Suspense fallback={
           <div className="flex items-center justify-center h-full bg-gray-50 animate-pulse">
