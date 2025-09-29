@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/resume",
+      "destination": "https://docs.google.com/document/d/e/2PACX-1vQCPJmgv8SPjVBZlYW4Ip_cETgM5iZdR0_rmRzXxXh5roSDYYeG0VqXuN5aQysdmWtw1SQyU01Nr0Qu/pub",
+      "permanent": false
+    },
+    {
       "source": "/x",
       "destination": "https://x.com/cytronicoder",
       "permanent": true
