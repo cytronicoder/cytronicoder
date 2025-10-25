@@ -68,6 +68,22 @@
   transition: transform 0.2s;
 }
 
+.blogWidget {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.blogWidget:hover {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  transform: scale(1.05);
+}
+
 .sectionTitle {
   color: var(--primary-color);
   border-bottom: 2px solid var(--primary-color);

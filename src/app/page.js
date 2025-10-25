@@ -114,6 +114,14 @@ export default function Home() {
                     sizes="32px"
                   />
                 </a>
+                <a
+                  href="https://blog.cytronicoder.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.blogWidget}
+                >
+                  I have a blog now! Check it out →
+                </a>
               </div>
             </div>
           </section>
