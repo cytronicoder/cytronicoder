@@ -51,7 +51,7 @@ export default function Home() {
             <div className={styles.introText}>
               <h1 className={styles.name}>Hello! I&apos;m Peter.{" "}<ThemeProvider /></h1>
               <p className={styles.subtitle}>
-                Student in Singapore. It&apos;s currently {weather ? `${weather}` : "loading..."}.
+                Student in Singapore. It&apos;s currently {weather ? `${weather} over here` : "loading.."}.
               </p>
               <div className={styles.socialMedia}>
                 <div className={styles.socialMediaIcons}>
@@ -131,9 +131,9 @@ export default function Home() {
           <section className={styles.bio}>
             <p className={styles.bioText}>
               I love working on{" "}
-              <a href="https://research.cytronicoder.com/orcid-162573947" className={styles.link}>single-cell analytics</a>,{" "}
-              <a href="https://research.cytronicoder.com/biorsp-posters" className={styles.link}>gene-expression dynamics</a>, and{" "}
-              <a href="https://research.cytronicoder.com/garcia" className={styles.link}>AI-driven discovery tools</a>{" "}
+              <a href="https://research.cytronicoder.com/orcid-162573947" className={styles.link} target="_blank" rel="noopener noreferrer">single-cell analytics</a>,{" "}
+              <a href="https://research.cytronicoder.com/biorsp-posters" className={styles.link} target="_blank" rel="noopener noreferrer">gene-expression dynamics</a>, and{" "}
+              <a href="https://research.cytronicoder.com/garcia" className={styles.link} target="_blank" rel="noopener noreferrer">AI-driven discovery tools</a>{" "}
               to understand how complex cellular systems change, adapt, and break.
               My work has been presented at IEEE BHI, GIW Asia, and ISMB/ECCB, among
               other major bioinformatics conferences. I dabble in jazz guitar playing
@@ -141,9 +141,9 @@ export default function Home() {
             </p>
             <p className={styles.bioText}>
               I also care deeply about inclusive STEM education. My goal is to build{" "}
-              <a href="https://github.com/orgs/hackclub/repositories" className={styles.link}>tools</a>{" "}
+              <a href="https://github.com/orgs/hackclub/repositories" className={styles.link} target="_blank" rel="noopener noreferrer">tools</a>{" "}
               and{" "}
-              <a href="https://ijhscommunity.org" className={styles.link}>communities</a>{" "}
+              <a href="https://ijhscommunity.org" className={styles.link} target="_blank" rel="noopener noreferrer">communities</a>{" "}
               that make computational education more accessible, equitable, and impactful for all.
             </p>
           </section>
