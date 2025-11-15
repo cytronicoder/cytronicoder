@@ -79,8 +79,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  margin-right: 25px;
+  gap: 30px;
+  margin-right: 50px;
 }
 
 .socialMediaIcon:hover {
