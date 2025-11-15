@@ -49,81 +49,103 @@ export default function Home() {
               height={150}
             />
             <div className={styles.introText}>
-              <h1 className={styles.name}>Zeyu Yao{" "}<ThemeProvider /></h1>
+              <h1 className={styles.name}>Hello! I&apos;m Peter.{" "}<ThemeProvider /></h1>
               <p className={styles.subtitle}>
                 Student in Singapore. It&apos;s currently {weather ? `${weather}` : "loading..."}.
               </p>
               <div className={styles.socialMedia}>
-                <a
-                  href="https://github.com/cytronicoder"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <OptimizedImage
-                    src={GitHubIcon}
-                    alt="GitHub logo"
-                    width={32}
-                    height={32}
-                    className={styles.socialMediaIcon}
-                    priority={true}
-                    sizes="32px"
-                  />
-                </a>
-                <a
-                  href="https://twitter.com/cytronicoder"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <OptimizedImage
-                    src={TwitterIcon}
-                    alt="Twitter logo"
-                    width={32}
-                    height={32}
-                    className={styles.socialMediaIcon}
-                    priority={true}
-                    sizes="32px"
-                  />
-                </a>
-                <a
-                  href="https://www.instagram.com/cytronicoder/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <OptimizedImage
-                    src={InstagramIcon}
-                    alt="Instagram logo"
-                    width={32}
-                    height={32}
-                    className={styles.socialMediaIcon}
-                    priority={true}
-                    sizes="32px"
-                  />
-                </a>
-                <a
-                  href="https://linkedin.com/in/cytronicoder"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <OptimizedImage
-                    src={LinkedInIcon}
-                    alt="LinkedIn logo"
-                    width={32}
-                    height={32}
-                    className={styles.socialMediaIcon}
-                    priority={true}
-                    sizes="32px"
-                  />
-                </a>
+                <div className={styles.socialMediaIcons}>
+                  <a
+                    href="https://github.com/cytronicoder"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <OptimizedImage
+                      src={GitHubIcon}
+                      alt="GitHub logo"
+                      width={32}
+                      height={32}
+                      className={styles.socialMediaIcon}
+                      priority={true}
+                      sizes="32px"
+                    />
+                  </a>
+                  <a
+                    href="https://twitter.com/cytronicoder"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <OptimizedImage
+                      src={TwitterIcon}
+                      alt="Twitter logo"
+                      width={32}
+                      height={32}
+                      className={styles.socialMediaIcon}
+                      priority={true}
+                      sizes="32px"
+                    />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/cytronicoder/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <OptimizedImage
+                      src={InstagramIcon}
+                      alt="Instagram logo"
+                      width={32}
+                      height={32}
+                      className={styles.socialMediaIcon}
+                      priority={true}
+                      sizes="32px"
+                    />
+                  </a>
+                  <a
+                    href="https://linkedin.com/in/cytronicoder"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <OptimizedImage
+                      src={LinkedInIcon}
+                      alt="LinkedIn logo"
+                      width={32}
+                      height={32}
+                      className={styles.socialMediaIcon}
+                      priority={true}
+                      sizes="32px"
+                    />
+                  </a>
+                </div>
                 <a
                   href="https://blog.cytronicoder.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.blogWidget}
                 >
-                  I have a blog now! Check it out →
+                  I have a blog! I write stuff now check it out →
                 </a>
               </div>
             </div>
+          </section>
+
+          <section className={styles.bio}>
+            <p className={styles.bioText}>
+              I love working on{" "}
+              <a href="https://research.cytronicoder.com/orcid-162573947" className={styles.link}>single-cell analytics</a>,{" "}
+              <a href="https://research.cytronicoder.com/biorsp-posters" className={styles.link}>gene-expression dynamics</a>, and{" "}
+              <a href="https://research.cytronicoder.com/garcia" className={styles.link}>AI-driven discovery tools</a>{" "}
+              to understand how complex cellular systems change, adapt, and break.
+              My work has been presented at IEEE BHI, GIW Asia, and ISMB/ECCB, among
+              other major bioinformatics conferences. I dabble in jazz guitar playing
+              and chess during my free time.
+            </p>
+            <p className={styles.bioText}>
+              I also care deeply about inclusive STEM education. My goal is to build{" "}
+              <a href="https://github.com/orgs/hackclub/repositories" className={styles.link}>tools</a>{" "}
+              and{" "}
+              <a href="https://ijhscommunity.org" className={styles.link}>communities</a>{" "}
+              that make computational education more accessible, equitable, and impactful for all.
+            </p>
           </section>
 
           <section className={styles.section}>
@@ -136,16 +158,6 @@ export default function Home() {
               <SpotifyWidget />
             </Suspense>
           </section>
-
-          {/* <section className={styles.section}>
-            <Suspense fallback={
-              <div className="flex items-center justify-center h-64 bg-gray-50 rounded-lg animate-pulse">
-                <div className="text-gray-500">Loading projects...</div>
-              </div>
-            }>
-              <Projects />
-            </Suspense>
-          </section> */}
 
           <Webring />
         </div>
