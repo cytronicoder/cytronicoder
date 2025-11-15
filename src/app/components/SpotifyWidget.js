@@ -77,7 +77,7 @@ export default function SpotifyWidget() {
                     </div>
                     <div className={styles.footer}>
                         <a
-                            href="https://github.com/cytronicoder"
+                            href="https://open.spotify.com/user/4hqui6xxvf85z9ftwmfe589ar"
                             target="_blank"
                             rel="noopener noreferrer"
                             className={styles.viewMore}
