@@ -24,57 +24,70 @@ export default function Projects() {
     }, []);
 
     return (
-        <div className={styles.container}>
-            {isLoaded ? (
-                <div>
-                    <p>I&apos;ve worked on...</p>
-                    {error ? (
-                        <>
-                            <p>
-                                <code>Oops! {error.message} :(</code>
-                            </p>
-                            <p>
-                                Please check back later, or contact me on{" "}
-                                <a
-                                    href="https://twitter.com/cytronicoder"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    Twitter.
-                                </a>
-                            </p>
-                        </>
-                    ) : (
-                        <div className={styles.projects}>
-                            {projects.length > 0 ? (
-                                projects
-                                    .sort(() => Math.random() - 0.5)
-                                    .slice(0, 2)
-                                    .map((project, index) => (
-                                        <Project
-                                            project={project}
-                                            key={project.id || `${project.name}-${index}`}
-                                        />
-                                    ))
-                            ) : (
-                                <p>
-                                    I do not have any public projects on GitHub at the moment.
-                                    Check back later!
+        <div className={styles.projectsContainer}>
+            <div className={styles.notebook}>
+                <div className={styles.spiralBinding}>
+                    {[...Array(8)].map((_, i) => (
+                        <div key={i} className={styles.spiral}></div>
+                    ))}
+                </div>
+
+                {isLoaded ? (
+                    <div className={styles.notebookContent}>
+                        {error ? (
+                            <div className={styles.errorMessage}>
+                                <p>Oops! Something went wrong :(</p>
+                                <p className={styles.errorDetail}>{error.message}</p>
+                                <p className={styles.errorFooter}>
+                                    Contact me on{" "}
+                                    <a
+                                        href="https://twitter.com/cytronicoder"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className={styles.link}
+                                    >
+                                        Twitter
+                                    </a>
                                 </p>
-                            )}
-                        </div>
-                    )}
-                    <p style={{ textAlign: "right" }}>...and{" "}
-                        <a href="https://github.com/cytronicoder" target="_blank" rel="noopener noreferrer" className={styles.underline_on_hover}>
-                            more!
-                        </a>
-                    </p>
-                </div>
-            ) : (
-                <div>
-                    <p>Loading...</p>
-                </div>
-            )}
+                            </div>
+                        ) : (
+                            <>
+                                <div className={styles.projectsList}>
+                                    {projects.length > 0 ? (
+                                        projects
+                                            .sort(() => Math.random() - 0.5)
+                                            .slice(0, 1)
+                                            .map((project, index) => (
+                                                <Project
+                                                    project={project}
+                                                    key={project.id || `${project.name}-${index}`}
+                                                />
+                                            ))
+                                    ) : (
+                                        <p className={styles.emptyState}>
+                                            No public projects at the moment. Check back later! 🌱
+                                        </p>
+                                    )}
+                                </div>
+                                <div className={styles.footer}>
+                                    <a
+                                        href="https://github.com/cytronicoder"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className={styles.viewMore}
+                                    >
+                                        View more projects on GitHub →
+                                    </a>
+                                </div>
+                            </>
+                        )}
+                    </div>
+                ) : (
+                    <div className={styles.loading}>
+                        <p>Loading projects...</p>
+                    </div>
+                )}
+            </div>
         </div>
     );
 }

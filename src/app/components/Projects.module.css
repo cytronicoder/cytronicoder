@@ -1,35 +1,111 @@
-.container {
-  display: block;
-  margin: 1rem auto;
-  max-width: 800px;
-  width: 100%;
+.projectsContainer {
+  width: 50%;
+  margin: 0 auto;
 }
 
-.projects {
-  margin: 1rem 0;
+.notebook {
+  min-height: 250px;
+  background: var(--background);
+  border: 3px solid var(--primary-color);
+  border-radius: 12px;
+  padding: 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1),
+    inset 0 2px 4px rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-.underline_on_hover {
-  display: inline-block;
+.spiralBinding {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 12px;
+  background: var(--foreground);
+  padding: 16px;
+  border-bottom: 3px solid var(--primary-color);
   position: relative;
+}
+
+.spiral {
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  background: transparent;
+}
+
+.notebookContent {
+  padding: 10px 20px;
+  background: var(--background);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectsList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.footer {
+  text-align: center;
+}
+
+.viewMore {
+  display: inline-block;
   color: var(--primary-color);
-  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 2px solid var(--primary-color);
+  border-radius: 20px;
+  transition: all 0.2s ease;
+  background: var(--foreground);
 }
 
-.underline_on_hover::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--primary-color);
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+.viewMore:hover {
+  background: var(--primary-color);
+  color: var(--background);
+  transform: scale(1.05);
 }
 
-.underline_on_hover:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+.loading,
+.emptyState {
+  text-align: center;
+  padding: 24px;
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+.errorMessage {
+  text-align: center;
+  padding: 16px;
+  color: var(--text-color);
+}
+
+.errorDetail {
+  font-size: 0.85rem;
+  color: var(--primary-color);
+  margin: 8px 0;
+  font-style: italic;
+}
+
+.errorFooter {
+  font-size: 0.9rem;
+  margin-top: 12px;
+}
+
+.link {
+  color: var(--primary-color);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.link:hover {
+  opacity: 0.8;
 }

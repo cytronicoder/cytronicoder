@@ -2,10 +2,6 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-
-import SpotifyLogo from "../../../public/spotify.svg";
-import Widget from "./Widget";
-
 import styles from "./SpotifyWidget.module.css";
 
 export default function SpotifyWidget() {
@@ -44,29 +40,55 @@ export default function SpotifyWidget() {
     return (
         <>
             {isLoaded ? (
-                <Widget svg={SpotifyLogo}>
-                    {song.isPlaying ? (
-                        <Link
-                            href={song.songUrl}
+                <div className={styles.cassette}>
+                    <div className={styles.cassetteContent}>
+                        <div className={styles.cassetteTop}>
+                            <div className={styles.reel}>
+                                <div className={`${styles.reelInner} ${song.isPlaying ? styles.spinning : ''}`}></div>
+                            </div>
+                            <div className={styles.tape}></div>
+                            <div className={styles.reel}>
+                                <div className={`${styles.reelInner} ${song.isPlaying ? styles.spinning : ''}`}></div>
+                            </div>
+                        </div>
+                        <div className={styles.songInfo}>
+                            {song.isPlaying ? (
+                                <Link
+                                    href={song.songUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={styles.songLink}
+                                >
+                                    <div className={styles.songTitle}>{song.title}</div>
+                                    <div className={styles.artistName}>{song.artist}</div>
+                                </Link>
+                            ) : (
+                                <div className={styles.notPlaying}>
+                                    <div className={styles.songTitle}>...</div>
+                                    <div className={styles.artistName}>Not playing</div>
+                                </div>
+                            )}
+                        </div>
+                        <div className={styles.buttons}>
+                            <div className={styles.button}></div>
+                            <div className={styles.button}></div>
+                            <div className={styles.button}></div>
+                        </div>
+                    </div>
+                    <div className={styles.footer}>
+                        <a
+                            href="https://github.com/cytronicoder"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={styles.underline_on_hover}
+                            className={styles.viewMore}
                         >
-                            I am listening to {song.title} by {song.artist}!
-                        </Link>
-                    ) : (
-                        <>I am not currently listening to anything.</>
-                    )}
-                </Widget>
+                            Check out my Spotify profile →
+                        </a>
+                    </div>
+                </div>
             ) : (
-                <div
-                    style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                    }}
-                >
-                    Loading...
+                <div className={styles.loading}>
+                    Loading music player...
                 </div>
             )}
         </>

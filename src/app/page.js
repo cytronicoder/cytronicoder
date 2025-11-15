@@ -126,15 +126,16 @@ export default function Home() {
             </div>
           </section>
 
-          {/* <section className={styles.section}>
+          <section className={styles.section}>
             <Suspense fallback={
               <div className="flex items-center justify-center h-24 bg-gray-50 rounded-lg animate-pulse">
-                <div className="text-gray-500">Loading Spotify widget...</div>
+                <div className="text-gray-500">Loading widgets...</div>
               </div>
             }>
+              <Projects />
               <SpotifyWidget />
             </Suspense>
-          </section> */}
+          </section>
 
           {/* <section className={styles.section}>
             <Suspense fallback={
