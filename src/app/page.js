@@ -14,7 +14,7 @@ import InstagramIcon from "../../public/instagram.svg";
 import LinkedInIcon from "../../public/linkedin.svg";
 import OptimizedImage from "./components/OptimizedImage";
 
-const PhotoMarquee = lazy(() => import("./components/PhotoMarquee"));
+// const PhotoMarquee = lazy(() => import("./components/PhotoMarquee"));
 const SpotifyWidget = lazy(() => import("./components/SpotifyWidget"));
 const Projects = lazy(() => import("./components/Projects"));
 
@@ -126,7 +126,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className={styles.section}>
+          {/* <section className={styles.section}>
             <Suspense fallback={
               <div className="flex items-center justify-center h-24 bg-gray-50 rounded-lg animate-pulse">
                 <div className="text-gray-500">Loading Spotify widget...</div>
@@ -134,9 +134,9 @@ export default function Home() {
             }>
               <SpotifyWidget />
             </Suspense>
-          </section>
+          </section> */}
 
-          <section className={styles.section}>
+          {/* <section className={styles.section}>
             <Suspense fallback={
               <div className="flex items-center justify-center h-64 bg-gray-50 rounded-lg animate-pulse">
                 <div className="text-gray-500">Loading projects...</div>
@@ -144,12 +144,12 @@ export default function Home() {
             }>
               <Projects />
             </Suspense>
-          </section>
+          </section> */}
 
           <Webring />
         </div>
       </main>
-      <aside className={styles.marquee}>
+      {/* <aside className={styles.marquee}>
         <Suspense fallback={
           <div className="flex items-center justify-center h-full bg-gray-50 animate-pulse">
             <div className="text-gray-500">Loading photo gallery...</div>
@@ -157,7 +157,7 @@ export default function Home() {
         }>
           <PhotoMarquee />
         </Suspense>
-      </aside>
+      </aside> */}
       <PerformanceMonitor />
     </div>
   );
