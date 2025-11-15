@@ -45,13 +45,13 @@ export default function Home() {
               className={styles.profileImage}
               fallbackSrc={ProfilePic}
               alt="Profile Picture"
-              width={150}
-              height={150}
+              width={125}
+              height={125}
             />
             <div className={styles.introText}>
               <h1 className={styles.name}>Hello! I&apos;m Peter.{" "}<ThemeProvider /></h1>
               <p className={styles.subtitle}>
-                Co'26 @ Stamford American Intl. School. It&apos;s {weather ? `${weather} over here` : "loading.."}.
+                Co'26 @ Stamford American Intl. School. It&apos;s {weather ? `${weather} over here in Singapore` : "loading.."}.
               </p>
               <div className={styles.socialMedia}>
                 <div className={styles.socialMediaIcons}>

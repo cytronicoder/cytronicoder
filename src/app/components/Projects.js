@@ -39,19 +39,20 @@ export default function Projects() {
                                 <p>Oops! Something went wrong :(</p>
                                 <p className={styles.errorDetail}>{error.message}</p>
                                 <p className={styles.errorFooter}>
-                                    Contact me on{" "}
+                                    Contact me through{" "}
                                     <a
-                                        href="https://twitter.com/cytronicoder"
+                                        href="mailto:novodoodle@gmail.com"
                                         target="_blank"
-                                        rel="noreferrer"
+                                        rel="noopener noreferrer"
                                         className={styles.link}
                                     >
-                                        Twitter
+                                        Email
                                     </a>
                                 </p>
                             </div>
                         ) : (
                             <>
+                                <p className={styles.projectText}>Here's something I made:</p>
                                 <div className={styles.projectsList}>
                                     {projects.length > 0 ? (
                                         projects

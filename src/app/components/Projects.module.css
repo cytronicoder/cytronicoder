@@ -20,7 +20,7 @@
   display: flex;
   gap: 8px;
   justify-content: center;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   background: var(--foreground);
   padding: 16px;
   border-bottom: 3px solid var(--primary-color);
@@ -41,6 +41,13 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+}
+
+.projectText {
+  margin: 0 0 8px 0;
+  color: var(--text-color);
+  font-size: 1.1em;
+  font-weight: 500;
 }
 
 .projectsList {

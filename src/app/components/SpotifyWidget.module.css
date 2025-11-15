@@ -31,8 +31,8 @@
 }
 
 .reel {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   background: radial-gradient(
     circle,
     var(--primary-color) 30%,
@@ -48,8 +48,8 @@
 }
 
 .reelInner {
-  width: 28px;
-  height: 28px;
+  width: 35px;
+  height: 35px;
   background: repeating-conic-gradient(
     from 0deg,
     var(--text-color) 0deg 10deg,
@@ -102,7 +102,7 @@
   border: 2px solid var(--primary-color);
   border-radius: 8px;
   margin-top: 8px;
-  padding: 8px;
+  padding: 12px;
   min-height: 60px;
   display: flex;
   flex-direction: column;
@@ -115,10 +115,11 @@
   text-decoration: none;
   display: flex;
   flex-direction: column;
+  gap: 4px;
 }
 
 .songTitle {
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--primary-color);
   white-space: nowrap;
@@ -128,7 +129,7 @@
 }
 
 .artistName {
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   color: var(--primary-color);
   white-space: nowrap;
   overflow: hidden;
