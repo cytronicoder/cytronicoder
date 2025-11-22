@@ -1,6 +1,6 @@
 .page {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: var(--font-nunito), sans-serif;
@@ -12,7 +12,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-y: auto;
 }
 
 .contentContainer {
@@ -194,11 +193,13 @@
 /* Responsive adjustments */
 @media (max-width: 800px) {
   .main {
-    padding-left: 20px;
+    padding: 40px;
+    align-items: flex-start;
   }
 
   .contentContainer {
-    padding-left: 20px;
+    width: 100%;
+    padding: 0;
   }
 
   /* .marquee {
@@ -211,13 +212,44 @@
     text-align: center;
   }
 
+  .section,
+  .section:not(:last-child) {
+    flex-direction: column;
+  }
+
   .profileImage {
     margin-right: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .introText {
+    width: 100%;
     align-items: center;
+  }
+
+  .name {
+    font-size: 2em;
+  }
+
+  .socialMedia {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .socialMediaIcons {
+    margin-right: 0;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .blogWidget {
+    width: 100%;
+    text-align: center;
+    display: block;
   }
 }
 

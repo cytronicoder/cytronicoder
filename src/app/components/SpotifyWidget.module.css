@@ -228,3 +228,9 @@
 [data-theme="dark"] .artistName {
   color: var(--background-color);
 } */
+
+@media (max-width: 800px) {
+  .cassette {
+    width: 100%;
+  }
+}
