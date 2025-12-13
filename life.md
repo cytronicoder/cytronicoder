@@ -2,7 +2,7 @@
 
 Here's a more retrospective look at my journey so far:
 
-I was born in Shanghai, China, and moved to Singapore at age 10, where I am currently a junior at **Stamford American International School (SAIS)**. I started with math competitions when I realized I could solve problems faster than my classmates. Not long after, I discovered competitive programming and AI during the COVID-19 pandemic.
+I was born in Shanghai, China, and moved to Singapore at age 10, where I am currently a senior at **Stamford American International School (SAIS)**. I started with math competitions when I realized I could solve problems faster than my classmates. Not long after, I discovered competitive programming and AI during the COVID-19 pandemic.
 
 Eventually, I qualified for **USAMO** in 2023 with a 243.5 and ranked **1st in Southeast Asia for AIME**. I also got a perfect 150/150 in AMC 10, scored 141/150 on AMC 12, and placed in the top 1% for both. In computing, I advanced to **USACO Platinum**, earning perfect scores in Gold and Silver. I've also won over 10 gold medals in international math contests, ranking top 5 globally in SASMO, AMO, and Math Kangaroo.
 
