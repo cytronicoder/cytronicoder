@@ -17,6 +17,8 @@ import OptimizedImage from "./components/OptimizedImage";
 // const PhotoMarquee = lazy(() => import("./components/PhotoMarquee"));
 const SpotifyWidget = lazy(() => import("./components/SpotifyWidget"));
 const Projects = lazy(() => import("./components/Projects"));
+const Snow = lazy(() => import("./components/Snow"));
+const Countdown = lazy(() => import("./components/Countdown"));
 
 export default function Home() {
   const [weather, setWeather] = useState(null);
@@ -41,17 +43,24 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.contentContainer}>
           <section className={styles.intro}>
-            <ProfileImage
-              className={styles.profileImage}
-              fallbackSrc={ProfilePic}
-              alt="Profile Picture"
-              width={125}
-              height={125}
-            />
+            <div className={styles.profileImageContainer}>
+              <ProfileImage
+                className={styles.profileImage}
+                fallbackSrc={ProfilePic}
+                alt="Profile Picture"
+                width={125}
+                height={125}
+              />
+              <img
+                src="/hat.png"
+                alt="Santa Hat"
+                className={styles.santaHat}
+              />
+            </div>
             <div className={styles.introText}>
-              <h1 className={styles.name}>Hello! I&apos;m Peter.{" "}<ThemeProvider /></h1>
+              <h1 className={styles.name}>Ho ho ho! I&apos;m <s>Peter</s> Santa Claus.{" "}<ThemeProvider /></h1>
               <p className={styles.subtitle}>
-                Co'26 @ Stamford American Intl. School. It&apos;s {weather ? `${weather} over here in Singapore` : "loading.."}.
+                Santa&apos;s workshop is always bustling with cheer 🎅
               </p>
               <div className={styles.socialMedia}>
                 <div className={styles.socialMediaIcons}>
@@ -130,17 +139,14 @@ export default function Home() {
 
           <section className={styles.bio}>
             <p className={styles.bioText}>
-              I love working on{" "}
+              I love spreading joy by working on{" "}
               <a href="https://research.cytronicoder.com/orcid-162573947" className={styles.link} target="_blank" rel="noopener noreferrer">single-cell analytics</a>,{" "}
               <a href="https://research.cytronicoder.com/biorsp-posters" className={styles.link} target="_blank" rel="noopener noreferrer">gene-expression dynamics</a>, and{" "}
               <a href="https://research.cytronicoder.com/garcia" className={styles.link} target="_blank" rel="noopener noreferrer">AI-driven discovery tools</a>{" "}
-              to understand how complex cellular systems change, adapt, and break.
-              My work has been presented at IEEE BHI, GIW Asia, and ISMB/ECCB, among
-              other major bioinformatics conferences. I dabble in jazz guitar playing
-              and chess during my free time.
+              to understand how complex cellular systems change, adapt, and break. My work has jingled all the way to IEEE BHI, GIW Asia, and ISMB/ECCB, among other major bioinformatics conferences. When I’m not busy in my workshop, I dabble in jazz guitar playing and chess.
             </p>
             <p className={styles.bioText}>
-              I also care deeply about inclusive STEM education. My goal is to build{" "}
+              I also care deeply about making STEM education as magical as Christmas morning. My goal is to build{" "}
               <a href="https://github.com/orgs/hackclub/repositories" className={styles.link} target="_blank" rel="noopener noreferrer">tools</a>{" "}
               and{" "}
               <a href="https://ijhscommunity.org" className={styles.link} target="_blank" rel="noopener noreferrer">communities</a>{" "}
@@ -148,7 +154,11 @@ export default function Home() {
             </p>
           </section>
 
-          <section className={styles.section}>
+          <Suspense fallback={null}>
+            <Countdown />
+          </Suspense>
+
+          {/* <section className={styles.section}>
             <Suspense fallback={
               <div className="flex items-center justify-center h-24 bg-gray-50 rounded-lg animate-pulse">
                 <div className="text-gray-500">Loading widgets...</div>
@@ -157,7 +167,7 @@ export default function Home() {
               <Projects />
               <SpotifyWidget />
             </Suspense>
-          </section>
+          </section> */}
 
           <Webring />
         </div>
@@ -172,6 +182,9 @@ export default function Home() {
         </Suspense>
       </aside> */}
       <PerformanceMonitor />
+      <Suspense fallback={null}>
+        <Snow />
+      </Suspense>
     </div>
   );
 }

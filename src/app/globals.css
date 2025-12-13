@@ -1,17 +1,17 @@
 :root {
-  --background: #f4f1e9;
-  --foreground: #e9e2d7;
-  --primary-color: #6a8e7f;
-  --text-color: #1a202c;
-  --background-color: #fcfaf6;
+  --background: #001122;
+  --foreground: #334455;
+  --primary-color: #87ceeb;
+  --text-color: #f0f8ff;
+  --background-color: #001122;
 }
 
 [data-theme="dark"] {
-  --background: #2f4f4f;
-  --foreground: #d3d3d3;
-  --primary-color: #5f9ea0;
-  --text-color: #f5f5dc;
-  --background-color: #1a202c;
+  --background: #0a2a0a;
+  --foreground: #1a4a1a;
+  --primary-color: #70c070;
+  --text-color: #ffffff;
+  --background-color: #0a2a0a;
 }
 
 html,
@@ -39,6 +39,6 @@ a {
   text-decoration: none;
 }
 
-[data-theme="dark"] img[src$=".svg"] {
+img[src$=".svg"] {
   filter: invert(1);
 }

@@ -34,7 +34,7 @@ export default function ThemeProvider() {
             onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
             aria-label="Toggle Theme"
         >
-            {theme === "light" ? "☀️" : "🌙"}
+            {theme === "light" ? "❄️" : "🎄"}
         </button>
     );
 }
