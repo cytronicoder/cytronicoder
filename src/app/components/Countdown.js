@@ -12,7 +12,13 @@ export default function Countdown() {
 
         const updateCountdown = () => {
             const now = new Date();
-            const difference = targetDate - now;
+            let difference;
+
+            if (now < christmasDate) {
+                difference = christmasDate - now;
+            } else {
+                difference = targetDate - now;
+            }
 
             if (difference > 0) {
                 const days = Math.floor(difference / (1000 * 60 * 60 * 24));
