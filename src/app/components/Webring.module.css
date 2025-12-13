@@ -53,3 +53,9 @@
   color: var(--text-color);
 }
 
+@media (max-width: 600px) {
+  .webring {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
