@@ -139,7 +139,7 @@ export default function Home() {
 
           <section className={styles.bio}>
             <p className={styles.bioText}>
-              I love spreading joy by working on{" "}
+              I love spreading jolly by working on{" "}
               <a href="https://research.cytronicoder.com/orcid-162573947" className={styles.link} target="_blank" rel="noopener noreferrer">single-cell analytics</a>,{" "}
               <a href="https://research.cytronicoder.com/biorsp-posters" className={styles.link} target="_blank" rel="noopener noreferrer">gene-expression dynamics</a>, and{" "}
               <a href="https://research.cytronicoder.com/garcia" className={styles.link} target="_blank" rel="noopener noreferrer">AI-driven discovery tools</a>{" "}
